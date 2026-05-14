@@ -1,0 +1,25 @@
+{
+  "name": "resource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^5.1.5",
+    "gulp": "^5.0.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss": "^8.4.14",
+    "sass": "^1.62.0"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "serve": "gulp serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
