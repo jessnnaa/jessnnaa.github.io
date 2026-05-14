@@ -3,7 +3,7 @@
   .insight-block {
     border-left: 3px solid var(--accent);
     padding: 1.75rem 2rem;
-    background: var(--accent-soft);
+    background: var(--accent-faint);
     border-radius: 0 18px 18px 0;
     margin: 2rem 0;
   }
@@ -26,7 +26,7 @@
   .user-card {
     border: 1px solid var(--line);
     padding: 1.75rem;
-    border-radius: 22px;
+    border-radius: 20px;
     transition: all 0.25s ease;
     box-shadow: 0 10px 30px rgba(15,23,42,0.03);
   }
@@ -94,10 +94,10 @@
   .flow-node {
     border: 1px solid var(--line);
     padding: 0.85rem 1.5rem;
-    border-radius: 999px;
+    border-radius: var(--border-radius-full);
     font-family: var(--mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
+    font-size: 13px;
+    letter-spacing: 0.04em;
     color: var(--text);
     background: var(--surface);
     text-transform: uppercase;
@@ -105,8 +105,8 @@
   }
 
   .flow-node.highlight {
-    border-color: rgba(124,92,255,0.3);
-    background: var(--accent-soft);
+    border-color: rgba(255, 85, 187, 0.3);
+    background: var(--accent-faint);
     color: var(--accent);
   }
 
@@ -118,7 +118,7 @@
 
   .flow-note {
     margin-top: 1.5rem;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-soft);
     line-height: 1.8;
   }

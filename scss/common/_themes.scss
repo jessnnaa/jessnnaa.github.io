@@ -37,15 +37,17 @@
     --bg: #f6f7fb;
     --surface: #ffffff;
     --surface-soft: #f1f3f9;
-    --line: #dde3ef;
+    --line: #e6e2e8;
     --text: #1e2430;
-    --text-soft: #667085;
-    --text-dim: #94a3b8;
-    --accent: #7c5cff;
+    --text-soft: #3A3A55;
+    --text-dim: #7A7A9A;
+    --accent: #FF4FA1;
     --accent-soft: #efeaff;
-    --accent-dim: #5c42d6;
+    --accent-dim: #FFBFC7;
+    --accent-faint: rgba(255, 191, 199, 0.15);
     --mono: 'DM Mono', monospace;
     --sans: 'Noto Sans KR', sans-serif;
+    --border-radius-full: 9999px;
   }
 
   *, *::before, *::after {
