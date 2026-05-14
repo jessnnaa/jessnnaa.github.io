@@ -1,0 +1,66 @@
+@use "sass:math";
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav {
+  padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+  gap: 1rem;
+  }
+
+  .hero {
+  padding: 0 1.5rem 4rem;
+  }
+
+  section {
+    padding: 5rem 1.5rem;
+  }
+
+  .direction-item,
+  .principle-item {
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  }
+
+  .outcome-grid {
+  grid-template-columns: 1fr;
+  }
+
+  footer {
+  padding: 2rem 1.5rem;
+  }
+}
+
+:root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-soft: #f1f3f9;
+    --line: #dde3ef;
+    --text: #1e2430;
+    --text-soft: #667085;
+    --text-dim: #94a3b8;
+    --accent: #7c5cff;
+    --accent-soft: #efeaff;
+    --accent-dim: #5c42d6;
+    --mono: 'DM Mono', monospace;
+    --sans: 'Noto Sans KR', sans-serif;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }

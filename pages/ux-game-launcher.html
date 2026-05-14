@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <title>Game Launcher UX Portfolio</title>
+
+        <style>
+
+            /* ── ANIMATIONS ── */
+            @keyframes fadeUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            @keyframes scrollPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav>
+        <a class="nav-logo" href="../index.html">UX Portfolio</a>
+        <div class="nav-links">
+            <a href="#problem">Problem</a>
+            <a href="#direction">Direction</a>
+            <a href="#screens">Screens</a>
+            <a href="#outcome">Outcome</a>
+        </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-index">Project 01 — UX/UI Design</p>
+        <h1 class="hero-title">Game Launcher<br><em>UX 개선</em></h1>
+        <p class="hero-desc">
+            게임 수가 증가할수록 런처는 오히려 플레이를 방해한다.<br>
+            탐색 시간을 줄이고 실행까지의 흐름을 단순화해,<br>유저가 게임 그 자체에 집중할 수 있는 경험을 설계했다.
+        </p>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">분야</div>
+            <div class="hero-meta-value">UX/UI Design</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">플랫폼</div>
+            <div class="hero-meta-value">데스크탑 게임 런처</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">타겟 유저</div>
+            <div class="hero-meta-value">멀티 게임 유저</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        </div>
+
+        <!-- 02 PROBLEM -->
+        <section id="problem">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">02 — Problem</span>
+            <h2 class="section-title">무엇이 문제였는가</h2>
+            </div>
+
+            <div class="insight-block">
+            <p>스팀과 같은 기존 플랫폼은 상점과 신작 홍보를 전면에 배치한다.<br>유저가 런처를 열 때 원하는 것은 게임을 하는 것인데, 플랫폼은 결제를 유도한다.</p>
+            </div>
+
+            <div class="problem-grid">
+            <div class="problem-item" data-num="01 — Findability">
+                <h3>탐색 비효율</h3>
+                <p>설치된 게임 수가 늘어날수록 원하는 게임을 찾는 데 시간이 걸린다. 최근 플레이나 즐겨찾기에 대한 접근성이 낮아 불필요한 스크롤과 탐색이 반복된다.</p>
+            </div>
+            <div class="problem-item" data-num="02 — Cognitive Load">
+                <h3>정보 피로도</h3>
+                <p>UI가 정보 위주로 구성되어 시각적 피로도가 높다. 프로모션·신작·추천 콘텐츠가 혼재하면서 유저의 주의를 분산시킨다.</p>
+            </div>
+            <div class="problem-item" data-num="03 — Status Clarity">
+                <h3>상태 불명확</h3>
+                <p>설치 여부, 업데이트 필요, 실행 가능 등 게임 상태가 직관적으로 전달되지 않는다. 유저는 매번 확인 과정을 거쳐야 한다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 03 TARGET USER -->
+        <section id="target">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">03 — Target User</span>
+            <h2 class="section-title">누구를 위한 설계인가</h2>
+            </div>
+            <p style="font-size:14px; color:var(--gray-5); margin-bottom:2rem; line-height:1.9;">
+            다양한 장르의 게임을 동시에 설치해두고, 그때그때 원하는 게임에 빠르게 접근하고자 하는 유저.
+            탐색 시간이 길어질수록 플레이 의욕이 낮아진다.
+            </p>
+            <div class="user-card-row">
+            <div class="user-card">
+                <span class="user-card-icon">▶</span>
+                <h3>빠른 접근 욕구</h3>
+                <p>런처를 열면 곧바로 게임을 시작하고 싶어한다. 탐색 과정이 길어지면 몰입 전 피로가 쌓인다.</p>
+            </div>
+            <div class="user-card">
+                <span class="user-card-icon">≡</span>
+                <h3>멀티 라이브러리</h3>
+                <p>10개 이상의 게임을 설치해두고 상황에 따라 전환하며 플레이한다. 정리된 목록과 빠른 필터가 핵심이다.</p>
+            </div>
+            <div class="user-card">
+                <span class="user-card-icon">◉</span>
+                <h3>즉각적 피드백 기대</h3>
+                <p>버튼 클릭에 즉각 반응이 없으면 오류로 인식한다. 게임 유저는 UI 반응 속도에 민감하다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 04 DIRECTION -->
+        <section id="direction">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">04 — Design Direction</span>
+            <h2 class="section-title">UX 개선 방향</h2>
+            </div>
+            <div class="direction-list">
+            <div class="direction-item">
+                <div class="direction-num">방향 01</div>
+                <div class="direction-body">
+                <h3>탐색 시간 단축</h3>
+                <p>최근 플레이 게임을 홈 최상단에 배치하고, 메모처럼 고정할 수 있는 핀 기능을 도입한다. 자주 실행하는 게임에 불필요한 탐색 없이 즉시 접근할 수 있도록 한다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">방향 02</div>
+                <div class="direction-body">
+                <h3>정보 구조 단순화</h3>
+                <p>카테고리를 재정리하고 불필요한 프로모션 요소를 제거한다. 상점보다 라이브러리를 우선하는 구조로, 유저가 게임 자체에 집중할 수 있는 화면을 만든다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">방향 03</div>
+                <div class="direction-body">
+                <h3>상태 가시성 강화</h3>
+                <p>실행 가능 / 설치 필요 / 업데이트 필요 상태를 버튼 레벨에서 명확히 구분한다. 유저가 별도로 확인하지 않아도 다음 행동을 바로 취할 수 있다.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 05 USER FLOW -->
+        <section id="flow">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">05 — User Flow</span>
+            <h2 class="section-title">실행까지의 흐름</h2>
+            </div>
+            <p style="font-size:14px;color:var(--gray-5);margin-bottom:2rem;line-height:1.9;">
+            핵심 플로우는 최대한 단순하게. 불필요한 중간 단계를 제거하고 홈에서 실행까지 최단 경로를 설계했다.
+            </p>
+            <div class="flow-wrap">
+            <div class="flow-node highlight">Home</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">게임 선택</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node">상세 화면</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node highlight">실행</div>
+            </div>
+            <div class="flow-note">
+            <strong>개선 포인트</strong> — 홈에서 최근 플레이 게임을 바로 실행할 수 있어 상세 화면을 거치지 않아도 된다.<br>
+            실행까지의 최소 단계가 <strong>Home → 실행</strong>으로 단축된다.
+            </div>
+        </div>
+        </section>
+
+        <!-- 06 SCREENS -->
+        <section id="screens">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">06 — Screen Structure</span>
+            <h2 class="section-title">화면 구성</h2>
+            </div>
+            <div class="screen-grid">
+            <div class="screen-item">
+                <h3>Home</h3>
+                <ul>
+                <li>최근 플레이</li>
+                <li>추천 게임</li>
+                <li>카테고리</li>
+                <li>한 눈에 파악</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Library</h3>
+                <ul>
+                <li>전체 게임 목록</li>
+                <li>장르 필터</li>
+                <li>최근 플레이순</li>
+                <li>구매 시기순</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Detail</h3>
+                <ul>
+                <li>플레이 버튼</li>
+                <li>상태 표시</li>
+                <li>간단 정보</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Search</h3>
+                <ul>
+                <li>자동완성</li>
+                <li>최근 검색어</li>
+                </ul>
+            </div>
+            <div class="screen-item">
+                <h3>Status UI</h3>
+                <ul>
+                <li>다운로드 중</li>
+                <li>업데이트 중</li>
+                <li>실행 가능</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 07 DESIGN PRINCIPLES -->
+        <section id="design">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">07 — UI Design</span>
+            <h2 class="section-title">UI 디자인 원칙</h2>
+            </div>
+            <div class="insight-block">
+            <p>게임 UX의 핵심은 즉각적인 피드백과 명확한 상태 표현이다.</p>
+            </div>
+            <div class="principle-row">
+            <div class="principle-item">
+                <div class="principle-tag">Button State</div>
+                <div class="principle-content">
+                <h3>버튼 상태 구분</h3>
+                <p>실행 가능 / 설치 필요 / 업데이트 필요를 색상과 레이블로 명확히 구분한다. 유저는 버튼 하나만 봐도 다음 행동을 알 수 있어야 한다. 모호한 상태는 허용하지 않는다.</p>
+                </div>
+            </div>
+            <div class="principle-item">
+                <div class="principle-tag">Visual Hierarchy</div>
+                <div class="principle-content">
+                <h3>시선 흐름 설계</h3>
+                <p>가장 중요한 액션 버튼을 가장 크고 높은 대비로 배치한다. 유저의 시선이 자연스럽게 핵심 행동으로 유도되도록 계층을 명확히 설계했다.</p>
+                </div>
+            </div>
+            <div class="principle-item">
+                <div class="principle-tag">Feedback</div>
+                <div class="principle-content">
+                <h3>즉각적 피드백</h3>
+                <p>클릭 즉시 상태 변화를 시각적으로 전달한다. 게임 유저는 반응이 없는 UI를 오류로 인식한다. 피드백의 속도와 명확성이 경험의 질을 결정한다.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 08 OUTCOME -->
+        <section id="outcome">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">08 — Outcome</span>
+            <h2 class="section-title">결과</h2>
+            </div>
+            <div class="outcome-grid">
+            <div class="outcome-item">
+                <h3>탐색 시간 감소</h3>
+                <p>최근 플레이 및 핀 기능으로 원하는 게임에 더 빠르게 도달할 수 있다.</p>
+            </div>
+            <div class="outcome-item">
+                <h3>실행 단계 단순화</h3>
+                <p>홈에서 직접 실행이 가능해 불필요한 중간 화면을 거치지 않아도 된다.</p>
+            </div>
+            <div class="outcome-item">
+                <h3>사용자 피로도 감소</h3>
+                <p>정보 구조 단순화와 명확한 상태 표현으로 인지 부담이 줄어들었다.</p>
+            </div>
+            </div>
+            <div class="closing-note">
+            <p>
+                이 프로젝트는 <strong>상점 중심 구조에서 플레이 중심 구조로의 전환</strong>을 핵심으로 한다.<br>
+                게임 런처는 게임을 파는 공간이 아니라, 게임을 즐기는 공간이어야 한다.<br>
+                유저 친화적 플랫폼은 유저가 원하는 것을 가장 빠르게 전달하는 데서 시작한다.
+            </p>
+            </div>
+        </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+        <p>Game Launcher UX — Portfolio Project</p>
+        <p style="color:var(--gray-3);">UX / UI Design</p>
+        </footer>
+
+        <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+            
+        </script>
+
+    </body>
+</html>

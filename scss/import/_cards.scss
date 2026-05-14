@@ -1,0 +1,64 @@
+/* ── CARDS & PANELS ── */
+  .problem-grid,
+  .screen-grid,
+  .outcome-grid {
+    display: grid;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .problem-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+
+  .screen-grid {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    margin-top: 1rem;
+  }
+
+  .outcome-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .problem-item,
+  .screen-item,
+  .outcome-item,
+  .user-card,
+  .closing-note {
+    background: var(--surface);
+  }
+
+  .problem-item,
+  .screen-item,
+  .outcome-item {
+    padding: 2rem;
+  }
+
+  .problem-item::before {
+    content: attr(data-num);
+    display: block;
+    margin-bottom: 1rem;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+  }
+
+  .problem-item h3,
+  .user-card h3,
+  .direction-body h3,
+  .principle-content h3,
+  .outcome-item h3 {
+    font-weight: 500;
+  }
+
+  .problem-item p,
+  .user-card p,
+  .direction-body p,
+  .principle-content p,
+  .outcome-item p,
+  .screen-item li,
+  .closing-note p {
+    color: var(--text-soft);
+    }
