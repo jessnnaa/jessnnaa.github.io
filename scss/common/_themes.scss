@@ -34,7 +34,7 @@
 }
 
 :root {
-    --bg: #f6f7fb;
+    --bg: #FBF9F4;
     --surface: #ffffff;
     --surface-soft: #f1f3f9;
     --line: #e6e2e8;
@@ -47,6 +47,7 @@
     --accent-faint: rgba(255, 191, 199, 0.15);
     --mono: 'DM Mono', monospace;
     --sans: 'Noto Sans KR', sans-serif;
+    --jetbrains: 'JetBrains Mono', monospace;
     --border-radius-full: 9999px;
   }
 
@@ -65,4 +66,5 @@
     font-weight: 300;
     line-height: 1.8;
     overflow-x: hidden;
+    user-select: none;
   }
