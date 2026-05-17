@@ -42,6 +42,9 @@
             <a href="#direction">Direction</a>
             <a href="#screens">Screens</a>
             <a href="#outcome">Outcome</a>
+            <button class="nav-prototype-btn" id="open-modal">
+                <span class="btn-dot"></span> 프로토타입 시연
+            </button>
         </div>
         </nav>
 
@@ -325,6 +328,12 @@
         <p style="color:var(--gray-3);">UX / UI Design</p>
         </footer>
 
+
+
+
+
+
+        <!-- SCRIPT -->
         <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -335,7 +344,9 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('section').forEach(s => observer.observe(s));
-        </script>
+        
+        const overlay = document.getElementById('modal-overlay');
 
+        </script>
     </body>
 </html>

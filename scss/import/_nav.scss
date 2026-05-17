@@ -25,6 +25,7 @@ nav {
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -41,3 +42,29 @@ nav {
 .nav-links a:hover {
     color: var(--accent);
 }
+
+.nav-prototype-btn {
+  display: inline-flex; 
+  align-items: center; 
+  gap: 7px;
+  background: #121212; 
+  color: #fff;
+  font-family: var(--mono); 
+  font-size: 12px; 
+  font-weight: 600;
+  padding: 8px 18px; 
+  border-radius: 100px; 
+  border: none;
+  cursor: pointer; 
+  letter-spacing: 0.03em;
+  transition: background 0.2s, transform 0.15s;
+}
+.nav-prototype-btn:hover { background: var(--accent); transform: scale(1.03); }
+.nav-prototype-btn .btn-dot {
+  width: 7px; 
+  height: 7px; 
+  border-radius: 50%; 
+  background: var(--accent);
+  transition: background 0.2s;
+}
+.nav-prototype-btn:hover .btn-dot { background: #fff; }
