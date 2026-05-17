@@ -238,21 +238,6 @@
       function copyEmail() {
         const email = 'jessnnaa@gmail.com';
         navigator.clipboard.writeText(email).then(() => {
-        const el = document.querySelector('[onclick="copyEmail()"]');
-        const original = el.querySelector('span').textContent;
-
-        el.classList.add('copied');
-        el.querySelector('span').textContent = 'Copied!';
-
-        setTimeout(() => {
-        el.classList.remove('copied');
-        el.querySelector('span').textContent = original;
-        }, 1800);
-        });
-      }
-      function copyEmail() {
-        const email = 'jessnnaa@gmail.com';
-        navigator.clipboard.writeText(email).then(() => {
           const toast = document.getElementById('toast');
           toast.classList.add('show');
           setTimeout(() => toast.classList.remove('show'), 2200);
