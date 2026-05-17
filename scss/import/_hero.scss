@@ -18,10 +18,24 @@
     letter-spacing: -0.03em;
     max-width: 500px;
     color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.main-subtitle {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    min-width: 70px;
+}
+
+.main-title-container {
+    margin-bottom: 5rem;
 }
 
 .main-container {
-    margin-top: 2rem;
+    margin: 10rem;
     color: var(--text-soft);
 }
 
@@ -30,6 +44,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    margin-bottom: 4rem;
 }
 
 

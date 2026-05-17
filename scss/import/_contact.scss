@@ -1,0 +1,349 @@
+/* ── AMBIENT BLOBS ── */
+    .amb {
+      position: fixed;
+      pointer-events: none;
+      z-index: 0;
+      border-radius: 50%;
+    }
+    .amb-1 {
+      width: 620px; height: 620px;
+      top: -240px; right: -140px;
+      background: radial-gradient(circle, rgba(255,79,161,0.09) 0%, transparent 68%);
+    }
+    .amb-2 {
+      width: 460px; height: 460px;
+      bottom: -180px; left: 30px;
+      background: radial-gradient(circle, rgba(255,191,199,0.13) 0%, transparent 68%);
+    }
+ 
+/* ── LAYOUT WRAPPER ── */
+    .profile-wrap {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 4rem auto;
+    }
+ 
+ 
+/* ── MAIN GRID ── */
+    .mg {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      min-height: calc(100vh - 73px);
+    }
+ 
+/* ── LEFT PANEL ── */
+    .lp {
+      padding: 38px 32px;
+      border-right: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+ 
+/* PHOTO */
+    .photo {
+      border: 1.5px solid var(--accent-dim);
+      border-radius: var(--r-xl);
+      aspect-ratio: 3 / 3.5;
+      background: linear-gradient(145deg, #fff5f8, #fff0f4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+      box-shadow 0.4s ease;
+    }
+    .photo:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 42px rgba(255, 79, 161, 0.12);
+    }
+    .photo::after {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(160deg, rgba(255,79,161,0.06) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+ 
+/* IDENTITY */
+    .id-name {
+      font-size: 20px; 
+      font-weight: 500;
+      color: var(--text-dark);
+      letter-spacing: -0.01em;
+      display: flex; 
+      align-items: baseline;
+      gap: 8px; 
+      flex-wrap: wrap;
+    }
+
+    .id-name-en {
+      font-family: var(--mono);
+      font-size: 12px; 
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+    }
+    .id-dob {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 4px;
+      letter-spacing: 0.06em;
+    }
+ 
+/* CONTACT */
+    .contact {
+      display: flex; flex-direction: column; gap: 9px;
+      padding: 16px;
+      background: var(--accent-faint);
+      border: 1px solid var(--border);
+      border-radius: var(--r-md);
+    }
+
+    .ci,
+    .ci-link {
+      display: flex; 
+      align-items: center; 
+      gap: 9px;
+      font-size: 13px;
+      color: var(--text-primary);
+      transition: color 0.2s;
+      cursor: default;
+    }
+
+    .ci:hover { color: var(--accent); }
+    .ci i { 
+        font-size: 14px; 
+        color: var(--accent); 
+        width: 15px;
+        flex-shrink: 0; 
+    }
+
+    .ci span { font-family: var(--mono); font-size: 12px; }
+ 
+    /* EDUCATION */
+    .edu { 
+        font-size: 11.5px; 
+        color: var(--text-primary); 
+        line-height: 1.8; 
+    }
+
+    .edu-tag {
+      font-family: var(--mono);
+      display: inline-block;
+      font-size: 13px; 
+      font-weight: 400;
+      color: var(--accent);
+      background: var(--accent-faint);
+      border: 1px solid var(--accent-dim);
+      border-radius: 4px;
+      padding: 2px 7px;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    .edu p { 
+        color: var(--text-primary);
+        font-size: 13px;
+    }
+    .edu .sub { 
+        font-size: 12px; 
+        color: var(--text-dim);
+    }
+ 
+/* ── RIGHT PANEL ── */
+    .rp {
+      padding: 38px 48px;
+      display: flex; 
+      flex-direction: column; 
+      gap: 38px;
+    }
+ 
+/* SECTION TITLE */
+    .st {
+      font-family: var(--mono);
+      font-size: 13px; 
+      letter-spacing: 0.26em;
+      color: var(--accent); 
+      font-weight: 400;
+      display: flex; 
+      align-items: center; 
+      margin-bottom: 16px;
+    }
+    .st::after {
+      content: '';
+      flex: 1;
+      background: linear-gradient(to right, var(--accent-dim), transparent);
+    }
+ 
+/* SKILLS GRID */
+    .sg {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 20px;
+    }
+    .si {
+      display: flex; 
+      flex-direction: column;
+      align-items: center; 
+      gap: 12px;
+      cursor: default;
+    }
+ 
+/* Skill bars */
+    .sb-wrap {
+      display: flex; 
+      flex-direction: column; 
+      gap: 6px;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-end;
+    }
+    .sb {
+      width: 100%;
+      border-radius: 2px;
+      background: var(--accent);
+      transform: scaleY(0); 
+      transform-origin: bottom;
+      transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+    .sb.off {
+      background: var(--accent-faint);
+      border: 1px solid var(--accent-dim);
+    }
+    .si.vis .sb                     { transform: scaleY(1.1); }
+    .si.vis .sb:nth-child(1)        { transition-delay: 0.04s; }
+    .si.vis .sb:nth-child(2)        { transition-delay: 0.09s; }
+    .si.vis .sb:nth-child(3)        { transition-delay: 0.14s; }
+    .si.vis .sb:nth-child(4)        { transition-delay: 0.19s; }
+    .si.vis .sb:nth-child(5)        { transition-delay: 0.24s; }
+    .si.vis .sb:nth-child(6)        { transition-delay: 0.29s; }
+    .si.vis .sb:nth-child(7)        { transition-delay: 0.34s; }
+ 
+    .si-label {
+      width: 100%; 
+      height: 50px; 
+      border-radius: 12px;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;
+      font-size: 12px;
+      letter-spacing: 0.02em; 
+      font-family: var(--mono);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+      border: 1px solid rgba(255,255,255,0.15);
+      transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.3s ease;
+    }
+
+    .si:hover .si-label {
+      transform: translateY(-7px) scale(1.1);
+      box-shadow: 0 12px 28px rgba(255,79,161,0.18);
+    }
+ 
+/* ── BOTTOM GRID ── */
+    .bg2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+ 
+/* CARD */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 22px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(255,79,161,0.08);
+    }
+ 
+/* EXPERIENCE */
+    .el { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 12px; 
+    }
+
+    .ei {
+      display: grid; grid-template-columns: 80px 1fr; 
+      gap: 11px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--border-soft);
+      opacity: 0; transform: translateX(-10px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .ei:last-child { border-bottom: none; 
+        padding-bottom: 0; 
+    }
+
+    .ei.vis { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+
+    .ay,
+    .ep {
+      font-family: var(--mono);
+      font-size: 13px; 
+      color: var(--text-dim);
+      line-height: 1.5; 
+      letter-spacing: 0.03em; 
+      padding-top: 2px;
+    }
+
+    .at,
+    .ec-org {
+      font-size: 13px; 
+      font-weight: 500;
+      color: var(--text-dark); 
+      margin-bottom: 3px;
+    }
+
+    .ec-org em { 
+      font-weight: 400;
+      font-family: var(--mono); 
+      font-size: 12px;
+      color: var(--accent);
+    }
+
+    .ao,
+    .ec-desc {
+      font-size: 12px; 
+      color: var(--text-dim); 
+      line-height: 1.5;
+    }
+ 
+/* ACTIVITIES */
+    .al { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 12px; 
+    }
+
+    .ai {
+      display: grid; 
+      grid-template-columns: 80px 1fr; 
+      gap: 10px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-soft);
+      opacity: 0; 
+      transform: translateX(10px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+
+    .ai:last-child { 
+        border-bottom: none; 
+        padding-bottom: 0; 
+    }
+
+    .ai.vis { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
