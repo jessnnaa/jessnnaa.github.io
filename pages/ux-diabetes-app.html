@@ -384,7 +384,7 @@
         function applyMomentum() {
             cancelAnimationFrame(rafId);
             (function step() {
-                velX *= 0.96;
+                velX *= 0.96; // 마찰 계수로 속도 감쇠
                 if (Math.abs(velX) < 0.05) return;
                 el.scrollLeft -= velX * 16;
                 rafId = requestAnimationFrame(step);
