@@ -321,23 +321,83 @@
         }, { threshold: 0.1 });
 
         document.querySelectorAll('section').forEach(s => observer.observe(s));
-        
         const overlay = document.getElementById('modal-overlay');
 
+
+        /* Scroll Dragging */
         const el = document.getElementById('sw1');
-        let isDown = false, startX, scrollLeft;
-        el.addEventListener('mousedown', e => {
+        let isDown = false, startX, scrollLeft, cachedOffsetLeft;
+        let rafId, velX = 0, lastX = 0, lastTime = 0;
+
+        el.addEventListener('pointerdown', e => {
             isDown = true;
             startX = e.pageX - el.offsetLeft;
             scrollLeft = el.scrollLeft;
+            lastX = e.pageX;
+            velocity = 0;
+            cancelAnimationFrame(rafId); // 진행 중인 관성 중단
+            cancelAnimationFrame(rafId);
+            el.setPointerCapture(e.pointerId);
+            document.documentElement.style.cursor = 'grabbing';
+            document.documentElement.style.userSelect = 'none';
+            cachedOffsetLeft = el.offsetLeft;
+            velX = 0;
+            lastTime = performance.now();
         });
-        el.addEventListener('mouseleave', () => isDown = false);
-        el.addEventListener('mouseup',   () => isDown = false);
-        el.addEventListener('mousemove', e => {
+
+        const stopDrag = () => {
+            if (!isDown) return;
+            isDown = false;
+            document.documentElement.style.cursor = '';
+            document.documentElement.style.userSelect = '';
+            applyMomentum();
+        };
+
+        el.addEventListener('pointerup', stopDrag);
+        el.addEventListener('pointercancel', stopDrag);
+
+        el.addEventListener('pointerup', e => {
             if (!isDown) return;
             e.preventDefault();
-            el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX);
+            const x = e.pageX - el.offsetLeft;
+            velocity = e.pageX - lastX; // 이동량 → 속도로 저장
+            lastX = e.pageX;
+            el.scrollLeft = scrollLeft - (x - startX);
         });
+
+        el.addEventListener('pointermove', e => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - el.offsetLeft;
+            const now = performance.now();
+            const dt = now - lastTime;
+            if (dt > 0) velX = (e.pageX - lastX) / dt;
+            velocity = e.pageX - lastX; //이동량 ->속도로 저장
+            lastX = e.pageX;
+            lastTime = now;
+            cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+            el.scrollLeft = scrollLeft - (x - startX);
+            });
+        });
+
+        function applyMomentum() {
+            cancelAnimationFrame(rafId);
+            (function step() {
+                velX *= 0.96;
+                if (Math.abs(velX) < 0.05) return;
+                el.scrollLeft -= velX * 16;
+                rafId = requestAnimationFrame(step);
+            })();
+        }
+
+        function glide() {
+            velocity *= FRICTION;          // 매 프레임마다 속도 감쇠
+            el.scrollLeft -= velocity;
+            if (Math.abs(velocity) > 0.5)  // 속도가 충분히 작아지면 종료
+            rafId = requestAnimationFrame(glide);
+        }
+
         </script>
     </body>
 </html>

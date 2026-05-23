@@ -23,13 +23,16 @@
     overflow-y: hidden;
     cursor: grab;
     width: 100%;
+    scroll-behavior: auto;
+    will-change: scroll-position;
+    touch-action: pan-y;
+    overscroll-behavior-x: contain;
 }
 
 .scroll-track {
     display: flex;
     gap: 1rem;
     width: 100%;
-    animation: scroll 20s linear infinite;
 }
 
 .scroll-card {
@@ -37,3 +40,7 @@
     width: 310px;
     max-width: 400px;
 }
+
+#sw1.active {
+    cursor: grabbing !important;
+ }
