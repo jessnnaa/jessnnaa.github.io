@@ -37,6 +37,22 @@
     gap: 1.5rem;
   }
 
+  .user-card-center {
+    border: 1px solid var(--line);
+    padding: 1.75rem;
+    border-radius: 20px;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.03);
+    text-align: center;
+  }
+
+  .user-card-center h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+  
   .user-card {
     border: 1px solid var(--line);
     padding: 1.75rem;
@@ -45,9 +61,10 @@
     box-shadow: 0 10px 30px rgba(15,23,42,0.03);
   }
 
+  .user-card-center:hover,
   .user-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(124,92,255,0.25);
+    border-color: var(--accent);
   }
 
   .user-card-icon {
@@ -56,6 +73,14 @@
     font-family: var(--mono);
     font-size: 22px;
     color: var(--accent);
+  }
+
+  .user-card-title {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    margin-bottom: 1rem;
   }
 
 /* ── DIRECTION ── */

@@ -45,6 +45,9 @@
     --accent-soft: #efeaff;
     --accent-dim: #FFBFC7;
     --accent-faint: rgba(255, 191, 199, 0.15);
+    --card-light: rgba(242, 236, 236, 0.4);
+    --shadow-card:8px 8px 20px rgba(0,0,0,0.07), -4px -4px 12px rgba(255,255,255,0.95);
+    --shadow-inset: inset 4px 4px 10px rgba(0,0,0,0.07), inset -4px -4px 10px rgba(255,255,255,0.95);
     --mono: 'DM Mono', monospace;
     --sans: 'Noto Sans KR', sans-serif;
     --jetbrains: 'JetBrains Mono', monospace;
@@ -62,6 +65,12 @@
   }
 
   html { scroll-behavior: smooth; }
+
+  img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+  }
 
   body {
     background: var(--bg);

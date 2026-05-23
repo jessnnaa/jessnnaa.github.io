@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+        <title>IfromU UX Portfolio</title>
+
+        <style>
+
+            /* ── ANIMATIONS ── */
+            @keyframes fadeUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            @keyframes scrollPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav>
+        <a class="nav-logo" href="../index.html">UX Portfolio</a>
+        <div class="nav-links">
+            <a href="#brand">Brand Identity</a>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#design">Design Concept</a>
+            <a href="#features">Key Features</a>
+            <a href="#prototype" class="nav-prototype-btn">
+                <span class="btn-dot"></span>Prototype
+            </a>
+        </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-index">Project 02 — UX/UI Design</p>
+        <h1 class="hero-title">IfromU 당뇨 관리 앱<br><em>UX 디자인</em></h1>
+        <p class="hero-desc">
+            세대를 초월한 접근성과 기록의 최소화로<br>
+            꾸준한 당뇨 관리를 돕는 헬스케어 UX 프로젝트입니다.
+        </p>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">분야</div>
+            <div class="hero-meta-value">UX/UI Design</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">플랫폼</div>
+            <div class="hero-meta-value">모바일 앱</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">타겟 유저</div>
+            <div class="hero-meta-value">당뇨병 환자</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        </div>
+
+        <!-- 01 Brand Identity -->
+        <section id="brand">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">01 — Brand Identity</span>
+            <h2 class="section-title">IfromU 아이프롬유 당뇨 기록 앱</h2>
+            </div>
+
+            <div class="insight-block">
+            <p>"I Promise you" 에서 모티브를 얻었습니다.<br>"당뇨병으로부터 너를 지키도록 약속할게" 신뢰와 책임을 담은 브랜드 네임입니다.</p>
+            </div>
+
+            <div class="problem-grid">
+            <div class="problem-item" data-num="01 — Application Type">
+                <h3>서비스 유형</h3>
+                <p>당뇨병 기록 및 관리 모바일 애플리케이션</p>
+            </div>
+            <div class="problem-item" data-num="02 — Goals">
+                <h3>핵심 목표</h3>
+                <p>세대 불문 관리가 쉽고, 효율적이고 정밀적인 처방을 지원하는 것입니다.</p>
+            </div>
+            <div class="problem-item" data-num="03 — Design Concept">
+                <h3>디자인 콘셉트</h3>
+                <p>뉴모피즘(Neumorphism)을 기반으로 한 신뢰감과 정밀함을 강조한 UI 입니다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 02 problems -->
+        <section id="problem">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">02 — Research & Pain Points</span>
+            <h2 class="section-title">기존 서비스의 문제점</h2>
+            </div>
+            <div class="direction-list">
+            <div class="direction-item">
+                <div class="direction-num">01</div>
+                <div class="direction-body">
+                <h3>자동 통계 부재</h3>
+                <p>대부분의 혈당 앱은 3개월 평균 통계를 제공하지 않아, 데이터를 외부로 내보내 수작업으로 계산해야 합니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">02</div>
+                <div class="direction-body">
+                <h3>기기 연동 앱 분리</h3>
+                <p>혈당 측정기 연동 앱과 기록 앱이 분리되어 있어 수치를 두 번 입력해야 하는 이중 기록의 번거로움이 존재합니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">03</div>
+                <div class="direction-body">
+                <h3>단편적 진단 시스템</h3>
+                <p>당일 피 검사 결과만으로 처방을 받는 구조로, 장기적・종합적인 데이터 분석에 기반한 정밀 처방이 어렵습니다.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 03 Solutions -->
+        <section id="solution">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">03 — Design Solutions</span>
+            <h2 class="section-title">IfromU의 솔루션</h2>
+            </div>
+            <div class="user-card-row">
+            <div class="user-card-center">
+                <span class="user-card-title">Solution 01</span>
+                <h3>3개월 자동 통계</h3>
+                <p>혈당 수치를 자동으로 집계해 3개월 총 평균을 산출합니다. 의료진과 즉시 공유 가능한 리포트를 제공합니다.</p>
+            </div>
+            <div class="user-card-center">
+                <span class="user-card-title">Solution 02</span>
+                <h3>블루투스 기기 통합</h3>
+                <p>혈당 측정기와 블루투스로 직접 연동, 측정, 기록, 분석을 하나의 앱에서 완결하도록 합니다.</p>
+            </div>
+            <div class="user-card-center">
+                <span class="user-card-title">Solution 03</span>
+                <h3>병원 상시 연결</h3>
+                <p>누적 데이터 기반으로 병원과 주치의랑 실시간으로 연결되도록 합니다. 종합 분석을 통한 정밀 처방을 지원합니다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 04 Design Concepts -->
+        <section id="design">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">04 — Design Concepts</span>
+            <h2 class="section-title">디자인 원칙</h2>
+            </div>
+            <div class="user-card-row">
+                <div class="user-card-center">
+                    <span class="user-card-title">Concept 01</span>
+                    <h3>기록 최소화</h3>
+                    <p>복잡한 입력 절차를 줄여 꾸준한 관리가 가능합니다. 기록 스트레스를 해소합니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Concept 02</span>
+                    <h3>세대 초월 접근성</h3>
+                    <p>노령층, 청년층 모두 부담 없이 사용할 수 있는 직관적인 인터페이스로 디자인합니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Concept 03</span>
+                    <h3>합리적 데이터 관리</h3>
+                    <p>누적 데이터로 효율적이고 정밀한 처방 환경을 구현합니다.</p>
+                </div>
+            </div>
+            <div class="nm-sample">
+                <div class="nm-input">
+                    <div class="nm-btn">+</div>
+                    <span>뉴모피즘 UI 예시</span>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 05 Key Features -->
+        <section id="features">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">05 — Key Features</span>
+            <h2 class="section-title">주요 기능</h2>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>메인 화면</span>
+                    </div>
+                    <h3>자동 데이터 수집</h3>
+                    <p>연결된 당뇨 기기에서 수치를 바로 수집해 자동으로 기록합니다. 주요 카테고리부터 부가 기록가지 한눈에 확인 가능합니다.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>기록 & 전송</span>
+                    </div>
+                    <h3>빠른 기록 & 전송</h3>
+                    <p>언제든 빠르고 효율적으로 필요한 기록을 남기고 의료진에게 즉각 전달할 수 있습니다. </p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>일상 기록</span>
+                    </div>
+                    <h3>식단・운동・투약</h3>
+                    <p>식단, 운동, 투약 정보를 쉽고 간단하게 기록합니다. 심플한 레이아웃으로 필요한 정보를 직관적으로 확인합니다.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>통계</span>
+                    </div>
+                    <h3>3개월 자동 통계</h3>
+                    <p>누적된 혈당 데이터를 자동으로 분석해 3개월 평균치를 산출, 정밀 처방의 근거 자료로 활용합니다.</p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item full">
+                    <div class="feature-header">
+                        <span>병원 연결</span>
+                    </div>
+                    <h3>주치의 상시 연결 시스템</h3>
+                    <p>누적된 개인 건강 데이터를 기반으로 병원 및 주치의와 실시간으로 연결합니다. 단순 혈당 기록을 넘어 식이・운동・투약 패턴을 종합 분석하여 더 정확하고 개인화된 처방이 가능한 환경을 만듭니다.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 06 PROTOTYPE Screens -->
+        <section id="prototype" class="visible">
+        <div class="proto-container">
+            <h1 class="section-num">01 Main Screen - 메인 화면</h1>
+            <div class="flex-wrap">
+                <img src="../media/ifromu/IMG_ifromu_splash.png" alt="Splash Screen" />
+                <img src="../media/ifromu/IMG_ifromu_main.png" alt="Main Screen" />
+                <img src="../media/ifromu/IMG_ifromu_menu.png" alt="Menu Screen" />
+            </div>
+            <h1 class="section-num">02 Detail Screen - 세부 화면</h1>
+            <div class="scroll-wrap" id="sw1">
+                <div class="scroll-track">
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L1T.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L1B.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L2T.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L2M.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L2B.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L3T.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L3B.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L4T.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L4B.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L5T.png" alt="Detail Screen" />
+                </div>
+                <div class="scroll-card">
+                    <img src="../media/ifromu/IMG_ifromu_L5B.png" alt="Detail Screen" />
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer>
+        <p>IfromU Application UX Project</p>
+        <p style="color:var(--gray-3);">UX / UI Design</p>
+        </footer>
+
+
+        <!-- SCRIPT -->
+        <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+        
+        const overlay = document.getElementById('modal-overlay');
+
+        const el = document.getElementById('sw1');
+        let isDown = false, startX, scrollLeft;
+        el.addEventListener('mousedown', e => {
+            isDown = true;
+            startX = e.pageX - el.offsetLeft;
+            scrollLeft = el.scrollLeft;
+        });
+        el.addEventListener('mouseleave', () => isDown = false);
+        el.addEventListener('mouseup',   () => isDown = false);
+        el.addEventListener('mousemove', e => {
+            if (!isDown) return;
+            e.preventDefault();
+            el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX);
+        });
+        </script>
+    </body>
+</html>
