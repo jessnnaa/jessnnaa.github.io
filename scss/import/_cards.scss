@@ -109,6 +109,7 @@
     color: var(--text-soft);
   }
 
+  .blurred-card,
   .project-card {
     background: rgba(255, 250, 250, 0.3);
     padding: 35px 30px 30px 30px;
@@ -119,30 +120,53 @@
     gap: 1.2rem;
     width: 100%;
     transition: all 0.25s ease;
-    
+
     /* Effect-CardLight */
     box-shadow: 0 279px 78px 0 rgba(173, 153, 153, 0.00), 0 178px 71px 0 rgba(173, 153, 153, 0.01), 0 100px 60px 0 rgba(173, 153, 153, 0.05), 0 45px 45px 0 rgba(173, 153, 153, 0.09), 0 11px 25px 0 rgba(173, 153, 153, 0.10);
     backdrop-filter: blur(4px);
   }
 
-.project-card-item {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.5rem;
-}
+  /* Blurred Card Effect */
+  .blurred-card{
+    filter: blur(4px);
+  }
 
-.project-card-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    align-self: stretch;
-}
+  .box-overlay {
+    width: 100%;
+    position: relative;
+  }
 
-.project-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent);
-}
+  .text-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--accent);
+    border-radius: 20px;
+  }
+
+  /* Project Cards */
+  .project-card-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.5rem;
+  }
+
+  .project-card-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      align-self: stretch;
+  }
+
+  .project-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+  }
 
  
 /* Example Screens */
