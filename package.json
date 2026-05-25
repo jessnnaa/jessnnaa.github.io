@@ -11,7 +11,7 @@
     "gulp-dart-sass": "^1.0.2",
     "gulp-postcss": "^9.0.1",
     "gulp-sourcemaps": "^2.6.5",
-    "postcss": "^8.4.14",
+    "postcss": "^8.5.15",
     "sass": "^1.62.0"
   },
   "scripts": {
@@ -21,5 +21,9 @@
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
 }
