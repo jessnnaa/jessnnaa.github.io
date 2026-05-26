@@ -12,30 +12,72 @@ section.visible {
     transform: translateY(0);
 }
 
+///////
+.content {
+    position: relative;
+    width: 100%;
+    z-index: 2; /* Ensure content is above background images */
+    padding: clamp(24px, 5vw, 80px);
+}
+///////
+
 .content-wrap {
     max-width: 860px;
     margin: 0 auto;
 }
 
+.screen-header-wh,
+.screen-header,
 .section-header {
     display: flex;
     align-items: baseline;
     gap: 1.5rem;
+}
+
+.section-header {
     margin-bottom: 4rem;
 }
 
-
+.screen-num-wh,
+.screen-num,
 .section-num {
     font-family: var(--mono);
     font-size: 11px;
     letter-spacing: 0.15em;
-    color: var(--accent);
     text-transform: uppercase;
     min-width: 70px;
 }
 
- .section-title {
+.section-num {
+    color: var(--accent);
+}
+
+.screen-title-wh,
+.screen-title,
+.section-title {
     font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-weight: 300;
     line-height: 1.2;
+}
+
+.screen-num-wh,
+.screen-title-wh,
+.screen-header-wh {
+    color: var(--white);
+}
+
+.screen-header,
+.screen-header-wh {
+    margin-bottom: 24px;
+}
+
+.screen-section {
+    position: relative;
+    width: 100%;
+    height: 100dvh; /* 모바일 주소창 대응 */   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    margin-bottom: 5vw;
 }

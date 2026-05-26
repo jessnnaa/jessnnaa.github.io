@@ -21,13 +21,21 @@
     display: inline-grid;
     column-gap: 1rem;
     grid-template-rows: repeat(3, fit-content(100%));
-    grid-template-columns: repeat(2, minmax(360px, 1fr));
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
     margin-top: 1rem;
     width: 100%;
   }
   
   .feature-item.full {
     grid-column: 1 / -1;
+  }
+
+  .feature-item.hl1 {
+    background: #F0F9FA;
+  }
+
+  .feature-item.hl2 {
+    background: #f6f6fd;
   }
 
   .outcome-grid {
