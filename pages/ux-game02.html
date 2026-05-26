@@ -29,7 +29,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <title>Game Project 01</title>
+    <title>Game Project 02</title>
 
         <style>
 
@@ -89,181 +89,63 @@
         </div>
 
         <!-- PROJECT IMAGES -->
+        <h1 style="display: flex; align-items: center; justify-content: center; font-style: italic; color: var(--text-dim); font-size: 14px; margin: 24px 0;">*Figma AI와 ChatGPT를 활용해서 배경이미지를 생성하였습니다.</h1>
+
+        <!--01 GAME HUD-->
         <div class="content">
             <div class="screen-header">
                 <span class="screen-num">01 — Game HUD</span>
-                <h2 class="screen-title">기본 플레이 화면 - 최소 정보 구조 중심</h2>
-            </div>
-            <div class="screen-insight-block">
-                <p>오픈 월드 특성상 언제든 전투 ・ 기후 변화가 발생하므로, 체력과 시간, 그리고 기온을 상시 노출하도록 합니다.<br>
-                    미니맵은 우하단에 고정하고, 화면 중앙은 완전히 비워 플레이어의 시야를 확보합니다.</p>
-            </div>
-        </div>
-        <!--01 Game HUD-->
-        <div class="content">
-            <div class="screen-header">
-                <span class="screen-num">01 — Game HUD</span>
-                <h2 class="screen-title">기본 플레이 화면 - 설계 원칙</h2>
-            </div>
-            <div class="user-card-row">
-                <div class="user-card-center">
-                    <span class="user-card-title">01</span>
-                    <h3>시간 ・ 기온 - 좌측 상단</h3>
-                    <p>시간 흐름・기온이 캐릭터 상태에 직접 영향을 주기 때문에, 눈의 흐름 상단에 배치해 빠른 확인이 가능하게 합니다.</p>
-                </div>
-                <div class="user-card-center">
-                    <span class="user-card-title">02</span>
-                    <h3>체력바 - 우측 상단</h3>
-                    <p>오픈 월드 특성상 상시 표시하고 크게 배치합니다. 돌발 전투 상황에서 즉각적으로 인지 가능하게 합니다.</p>
-                </div>
-                <div class="user-card-center">
-                    <span class="user-card-title">03</span>
-                    <h3>미니맵 - 우측 하단</h3>
-                    <p>전투・대화 중 가장 방해가 적은 코너에 배치합니다. 필요 시 확인할 수 있고, 평시엔 시야 밖에 위치합니다.</p>
-                </div>
-            </div>
-        </div>
-        <div class="screen-section">
-            <img class="bg" src="../media/game01/IMG_G1_HUD.png" alt="HUD Design">   
-        </div>
-
-        <!--02 Weapon HUD-->
-        <div class="content">
-            <div class="screen-header">
-                <span class="screen-num">02 — Weapon HUD</span>
-                <h2 class="screen-title">전투 중 무기 퀵메뉴 - 상황 감지형 구조</h2>
-            </div>
-            <div class="screen-insight-block">
-                <p>배틀 도중 무기를 선택하는 메뉴입니다. 시스템 상에서 몹에 따라 사용하기 좋은 추천 무기를 3가지를 강조하고,<br>
-                       플레이어가 추가로 선택할 수 있는 “전체 무기 보기” 선택지도 함께 제공합니다.</p>
-            </div>
-        </div>
-        <div class="content">
-        <div class="screen-header">
-            <span class="screen-num">02 — Weapon HUD</span>
-            <h2 class="screen-title">전체 동작 흐름</h2>
-        </div>
-        <div class="feature-row">
-            <div class="feature-item full">
-                <div class="feature-header">
-                    <span>트리거</span>
-                </div>
-                <h3>퀵메뉴 버튼 장누름</h3>
-                <p>시간 슬로우 화면에 진입, 방사형 메뉴가 전개 됨.</p>
-            </div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-item full hl1">
-                <div class="feature-header">
-                    <span>상황 감지</span>
-                </div>
-                <h3>컨텍스트 분석</h3>
-                <p>현재 상황의 기온, 지형, 근접 적 속성을 읽어서 추천 슬롯 3개를 자동 선정하고 강조함.</p>
-            </div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-item full hl2">
-                <div class="feature-header">
-                    <span>기본 상태</span>
-                </div>
-                <h3>방사형 메뉴 표시</h3>
-                <p>추천 슬롯(녹색 황색 강조) + 나머지 일반 슬롯을 동시에 노출. 플레이어가 스틱으로 자유롭게 선택.</p>
-            </div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-item hl2">
-                <div class="feature-header">
-                    <span>추천 선택</span>
-                </div>
-                <h3>추천 슬롯 선택</h3>
-                <p>강조된 3개 중 하나를 스틱으로 선택하면 즉시 장착.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-header">
-                    <span>Fallback</span>
-                </div>
-                <h3>하단 “무기 보기" 슬롯</h3>
-                <p>스틱 아래 방향→전체 무기 그리드로 확장<br>플레이어가 수동으로 선택 가능.</p>
-            </div>
-        </div>
-        <div class="feature-row">
-            <div class="feature-item">
-                <div class="feature-header">
-                    <span>일반 선택</span>
-                </div>
-                <h3>기존 슬롯 선택</h3>
-                <p>추천 외 일반 슬롯도 그대로 선택 가능하며, 추천 시스템이 선택지를 막지 않음.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-header">
-                    <span>취소</span>
-                </div>
-                <h3>버튼 떼기/B 버튼</h3>
-                <p>메뉴 닫기. 기존 장착 무기 유지. 어떤 상태에서도 즉시 탈출 가능하게 설계.</p>
-            </div>
-        </div>
-        </div>
-        <div class="screen-section">
-            <img class="bg" src="../media/game01/IMG_G1_WeaponHUD.png" alt="Weapon HUD Design">
-        </div>
-
-        <!--03 Chapter-->
-        <div class="content">
-            <div class="screen-header">
-                <span class="screen-num">03 — Chapter Select</span>
-                <h2 class="screen-title">챕터 목록 - 정보 계층 구조 중심</h2>
-            </div>
-            <div class="screen-insight-block">
-                <p>장소, 날짜, 저장 유형을 한 줄에 정리한 목록형 레이아웃입니다.<br>
-                가장 최근 세이브를 강조해서 사용자 시선을 자연스럽게 유도하였습니다.</p>
-            </div>
-            <div class="user-card-row">
-                <div class="user-card-center">
-                    <span class="user-card-title">01</span>
-                    <h3>계층적 타이포</h3>
-                    <p>챕터명(대)→장소(소) 순으로 정보 계층을 명확히 분리하였습니다.</p>
-                </div>
-                <div class="user-card-center">
-                    <span class="user-card-title">02</span>
-                    <h3>저장 유형 구분</h3>
-                    <p>Manual Save/Auto Save를 구분하였습니다. 최신 수동 저장은 청색으로 강조하였습니다.</p>
-                </div>
-                <div class="user-card-center">
-                    <span class="user-card-title">03</span>
-                    <h3>배경 활용</h3>
-                    <p>반투명 패널로 게임 아트를 배경에 살려 게임 세계관 맥락을 유지하였습니다. </p>
-                </div>
-            </div>
-        </div>
-        <div class="screen-section">
-            <img class="bg" src="../media/game01/IMG_G1_Chapter.png" alt="Chapter Screen">
-        </div>
-
-        <!--04 Cutscene-->
-        <div class="content">
-            <div class="screen-header">
-                <span class="screen-num">04 — Cutscene</span>
-                <h2 class="screen-title">대화 컷씬 - 아트와 UI의 조화</h2>
+                <h2 class="screen-title">기본 플레이 화면 - 콘솔 구조 최적화</h2>
             </div>
             <div class="feature-row">
                 <div class="feature-item">
                     <div class="feature-header">
-                        <span>UI</span>
+                        <span>UX</span>
                     </div>
-                    <h3>아트 중심</h3>
-                    <p>대화창을 하단 투명 패널로 처리하고, UI를 절제해 아트가 주역이 되도록 설계하였습니다.</p>
+                    <h3>콘솔 구조 최적화</h3>
+                    <p>콘솔(조이콘)의 조작 구조와 가장 자연스러운 배치로 UX를 설계하였습니다.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-header">
-                        <span>UX</span>
+                        <span>UI</span>
                     </div>
-                    <h3>UI 가독성 확보</h3>
-                    <p>화자 이름과 대사를 분리 표기해서 가독성을 확보하였습니다. 버튼 프롬프트를 우하단 소형으로 배치하여 조작 가독성을 높였습니다.</p>
+                    <h3>아트와 조화</h3>
+                    <p>힐링 게임에 많은 영향을 주는 아기자기한 그래픽 아트와 조화되는 UI를 제작하였습니다.</p>
                 </div>
             </div>
         </div>
         <div class="screen-section">
-            <img class="bg" src="../media/game01/IMG_G1_Scene.png" alt="Cutscene">
+            <img class="bg" src="../media/game02/IMG_G2_HUD.png" alt="Main HUD">
+        </div>
+
+        <!--02 DIALOGUE-->
+        <div class="content">
+            <div class="screen-header">
+                <span class="screen-num">02 - DIALOGUE</span>
+                <h2 class="screen-title">대화 다이얼로그 - 감성적인 UI</h2>
+            </div>
+            <div class="screen-insight-block">
+                <p>대화 다이얼로그에서 사용하는 조작 프롬프트에 작은 인터랙션 디자인을 적용하고,<br>
+                   전체적인 아트 분위기와 어울리도록 투명 패널과 플랫한 색상을 활용하였습니다.</p>
+            </div>
+        </div>
+        <div class="screen-section">
+            <img class="bg" src="../media/game02/IMG_G2_Dialogue.png" alt="Dialogue">
+        </div>
+
+        <!--03 IVENTORY-->
+        <div class="content">
+            <div class="screen-header">
+                <span class="screen-num">03 - INVENTORY</span>
+                <h2 class="screen-title">인벤토리 - 쉬운 UI</h2>
+            </div>
+            <div class="screen-insight-block">
+                <p>정보가 많고 아이템이 많은 인벤토리의 특성상, UI가 복잡해질 수 있습니다.<br>
+                   그러므로 플레이어가 쉽게 이애하고 조작할 수 있는 화면이 되도록 정보를 최소한으로 보여주었습니다.</p>
+            </div>
+        </div>
+        <div class="screen-section">
+            <img class="bg" src="../media/game02/IMG_G2_Inventory.png" alt="Inventory">
         </div>
 
 

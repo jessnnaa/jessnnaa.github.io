@@ -1,6 +1,8 @@
 /* ── FOOTER ── */
 footer {
     padding: 3rem;
+    background: hsla(330, 100%, 99%, 0.82);
+    backdrop-filter: blur(10px);
     border-top: 1px solid var(--line);
     display: flex;
     justify-content: space-between;
