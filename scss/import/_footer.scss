@@ -9,6 +9,10 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+
+    @include tablet {
+        padding: 2rem 1.5rem;
+    }
 }
 
 footer p {

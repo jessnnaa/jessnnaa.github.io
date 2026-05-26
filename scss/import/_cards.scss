@@ -24,10 +24,18 @@
     grid-template-columns: repeat(2, minmax(240px, 1fr));
     margin-top: 1rem;
     width: 100%;
+
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
   }
   
   .feature-item.full {
     grid-column: 1 / -1;
+    width: 100%;
   }
 
   .feature-item.hl1 {
@@ -40,6 +48,10 @@
 
   .outcome-grid {
     grid-template-columns: repeat(3, 1fr);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+    }
   }
 
   .problem-item,
@@ -67,6 +79,11 @@
     grid-row: span 1;
     grid-column: span 1;
     gap: 1rem;
+    width: 100%;
+
+    @include mobile{
+      width: 48%;
+    }
   }
 
   .feature-item h3{
@@ -124,6 +141,7 @@
     border: 1px solid var(--line);
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 1.2rem;
     width: 100%;
@@ -132,6 +150,7 @@
     /* Effect-CardLight */
     box-shadow: 0 279px 78px 0 rgba(173, 153, 153, 0.00), 0 178px 71px 0 rgba(173, 153, 153, 0.01), 0 100px 60px 0 rgba(173, 153, 153, 0.05), 0 45px 45px 0 rgba(173, 153, 153, 0.09), 0 11px 25px 0 rgba(173, 153, 153, 0.10);
     backdrop-filter: blur(4px);
+
   }
 
   /* Blurred Card Effect */
@@ -169,6 +188,10 @@
       align-items: flex-start;
       gap: 1.5rem;
       align-self: stretch;
+    
+    @include tablet{
+      flex-wrap: wrap;
+    }
   }
 
   .project-card:hover {

@@ -129,6 +129,11 @@
     gap: 2rem;
     padding: 2.5rem 0;
     border-bottom: 1px solid var(--line);
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
   }
 
   .direction-item {
@@ -161,6 +166,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 2rem 0;
+
+    @include mobile {
+      gap: 1rem;
+    }
   }
 
   .flow-node {

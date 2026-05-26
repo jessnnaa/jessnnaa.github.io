@@ -4,6 +4,8 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
+    height: 75px;
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -12,6 +14,10 @@ nav {
     border-bottom: 1px solid var(--line);
     background: hsla(330, 100%, 99%, 0.82);
     backdrop-filter: blur(8px);
+
+    @include tablet {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .nav-logo {
@@ -23,10 +29,23 @@ nav {
     text-decoration: none;
 }
 
+.nav-profile {
+    display: flex;
+    align-items: center;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
     gap: 2rem;
+
+    @include tablet {
+        gap: 1rem;
+    }
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .nav-links a {

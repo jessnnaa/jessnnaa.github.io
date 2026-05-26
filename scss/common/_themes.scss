@@ -1,37 +1,26 @@
 @use "sass:math";
 
 /* ── RESPONSIVE ── */
-@media (max-width: 768px) {
-  nav {
-  padding: 1rem 1.5rem;
-  }
+$breakpoint: 1024px;
 
-  .nav-links {
-  gap: 1rem;
-  }
-
-  .hero {
-  padding: 0 1.5rem 4rem;
-  }
-
-  section {
-    padding: 5rem 1.5rem;
-  }
-
-  .direction-item,
-  .principle-item {
-  grid-template-columns: 1fr;
-  gap: 0.5rem;
-  }
-
-  .outcome-grid {
-  grid-template-columns: 1fr;
-  }
-
-  footer {
-  padding: 2rem 1.5rem;
+@mixin desktop {
+  @media (min-width: $breakpoint) {
+    @content;
   }
 }
+
+@mixin tablet {
+  @media (max-width: ($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
 
 :root {
     --bg: #FBF9F4;

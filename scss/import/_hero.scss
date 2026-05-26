@@ -16,14 +16,18 @@
     font-weight: 300;
     line-height: 1.05;
     letter-spacing: -0.03em;
-    max-width: 500px;
     color: var(--accent);
     margin-bottom: 1rem;
+
+    @include mobile {
+        font-size: 8vw;
+    }
 }
 
 .main-subtitle {
     font-family: var(--mono);
     font-size: 13px;
+    font-weight: 400;
     letter-spacing: 0.15em;
     color: var(--text-dim);
     text-transform: uppercase;
@@ -31,12 +35,16 @@
 }
 
 .main-title-container {
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 
 .main-container {
-    margin: 10rem;
+    margin: 5rem;
     color: var(--text-soft);
+
+    @include tablet {
+        margin: 10vh 5vw;
+    }
 }
 
 .main-container-items {
@@ -56,11 +64,16 @@
     padding: 0 3rem 5rem;
     position: relative;
     overflow: hidden;
+
+    @include tablet {
+        padding: 0 1.5rem 4rem;
+    }
 }
 
 .hero-bg {
     position: absolute;
     inset: 0;
+    z-index: -2;
     background:
       radial-gradient(circle at 80% 20%, rgba(225,79,161,0.18), transparent 30%),
       radial-gradient(circle at 10% 80%, rgba(225,191,199,0.12), transparent 35%),
@@ -142,6 +155,10 @@
     gap: 8px;
     opacity: 0;
     animation: fadeUp 1s 1s forwards;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .scroll-line {
@@ -149,4 +166,48 @@
     height: 48px;
     background: linear-gradient(to bottom, var(--accent), transparent);
     animation: scrollPulse 2s infinite;
+}
+
+/* PILL BUTTON */
+
+.solid-pill-btn {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: var(--accent-dim);
+    border-radius: 200px;
+    color: var(--white);
+    font-size: 14px;
+    font-family: var(--jetbrains);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 18px;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.solid-pill-btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, #ffaaac 0%, #ffc8b9 100%);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease;
+}
+
+.solid-pill-btn:hover::before {
+    opacity: 1;
+}
+
+.solid-pill-btn:hover span {
+    transition: transform 0.3s ease;
+    transform: translateX(2px);
+}
+
+.center-align {
+    display: flex;
+    justify-content: center;
+    margin: 5vw 24px;
 }
