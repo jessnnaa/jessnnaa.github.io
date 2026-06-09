@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta name="keywords" content="UX 디자인, UI 디자인, 포트폴리오, 웹 디자인, 앱 디자인, 게임 UX">
+    <meta name="author" content="Maybii">
+    <meta property="og:title" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta property="og:image" content="../media/og-maybii.jpg">
+    <meta property="og:url" content="https://jessnnaa.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon_io/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>xPlayz Web Design</title>
+
+        <style>
+
+            /* ── ANIMATIONS ── */
+            @keyframes fadeUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            @keyframes scrollPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav>
+        <a class="nav-logo" href="../index.html">UX Portfolio</a>
+        <div class="nav-links">
+            <a href="#goal">Project Goal</a>
+            <a href="#problem">Problem & Solution</a>
+            <a href="#screens">Key Screens</a>
+            <a href="#prototype" class="nav-prototype-btn">
+                <span class="btn-dot"></span>UI Design
+            </a>
+        </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-index">Project 03 — UX/UI Design</p>
+        <h1 class="hero-title">xPlayz 반응형 웹<br><em>UI 디자인</em></h1>
+        <p class="hero-desc">
+            xPlayz앱을 홍보하고, 광고 수익을 받는 유저들의 어뷰징을 관리할 수 있으며,<br>
+            xPlayz AD를 통해 유저들이 자유롭게 광고를 노출할 수 있도록 디자인하였습니다.
+        </p>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">분야</div>
+            <div class="hero-meta-value">UX/UI Design</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">플랫폼</div>
+            <div class="hero-meta-value">웹/모바일</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">타겟 유저</div>
+            <div class="hero-meta-value">xPlayz 앱 사용자</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">제작 기간</div>
+            <div class="hero-meta-value">2023.01-2023.07</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        </div>
+
+        <!-- 01 Goal -->
+        <section id="goal">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">01 — Project Goal</span>
+            <h2 class="section-title">목표</h2>
+            </div>
+
+            <div class="insight-block">
+            <p>유저의 앱 사용 현황과 광고 수익 보상의 수를 한눈에 확인합니다.<br>유저들간의 랭킹을 보여줌으로써 앱을 활발하게 이용하도록 유도하여, 이용률을 증가 시키고자 합니다.</p>
+            </div>
+        </div>
+        </section>
+
+        <!-- 02 problems -->
+        <section id="problem">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">02 — Problem & Solution</span>
+            <h2 class="section-title">문제 발견 및 솔루션</h2>
+            </div>
+            <div class="user-card-row">
+            <div class="user-card-center">
+                <span class="user-card-title">Problem 01</span>
+                <h3>광고 수익 실시간 확인 불가</h3>
+                <p>유저가 광고를 시청한 후 획득한 수익을 즉시 확인할 수 있는 수단이 없어, 보상 체계에 대한 신뢰도와 참여 동기가 저하됩니다.</p>
+            </div>
+            <div class="user-card-center">
+                <span class="user-card-title">Problem 02</span>
+                <h3>모바일 앱 내 유저 간 어뷰징 상시 발생</h3>
+                <p>관리자가 이상 보상 지급 현황을 한눈에 파악하기 어려워, 어뷰징이 탐지되지 않은 채 지속됩니다.</p>
+            </div>
+            </div>
+            <div style="position: relative; align-items:center;">
+                <i class="material-symbols-outlined" style="position: relative; top: 20px; left: 50%; transform: translate(-50%, -50%); color:darkgray">arrow_and_edge</i>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>메인 화면</span>
+                    </div>
+                    <h3>광고 수익 UI</h3>
+                    <p>광고 시청으로 얻은 수익 달성률을 IP 별로 메인 화면에 게이지로 표시해, 유저가 보상 현황을 실시간으로 인지할 수 있도록 합니다.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>랭킹 화면</span>
+                    </div>
+                    <h3>보상 이상 탐지 대시보드</h3>
+                    <p>랭킹 페이지에 보상 수여 금액을 집계 및 표시하여, 관리자가 비정상적인 지급 패턴을 한눈에 식별할 수 있도록 합니다.</p>
+                </div>
+            </div>            
+        </div>
+        </section>
+
+        <!-- 03 Key Screens -->
+        <section id="features">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">05 — Key Screens</span>
+            <h2 class="section-title">주요 화면</h2>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item full">
+                    <h3>메인 화면</h3>
+                    <p>앱에 연결된 실제 사용자의 수와 유저들이 받아간 실제 보상 물량을 실시간으로 데이터를 보여줍니다. 또한, 메인 화면에서 xPlayz 앱의 사용 방법을 확인할 수 있는 상세 페이지도 이어서 확인할 수 있게 웹을 디자인하였습니다. </p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item full">
+                    <h3>랭킹 화면</h3>
+                    <p>유저들이 xPlayz로 보상 받은 수익을 1일 / 7일 / 30일 간격으로 확인할 수 있는 지표를 작업하였습니다. 관리자가 한 눈에 확인하여 어뷰징 파악을 쉽게 할 수 있도록 디자인 하였습니다.</p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item full">
+                    <h3>광고 신청 폼 화면</h3>
+                    <p>유저들이 xplayz 앱에 올라갈 광고를 신청할 수 있는 폼 페이지 디자인을 하였습니다. 폼은 자칫 복잡한 화면이 될 수 있기 때문에, 버튼과 텍스트의 배치를 적절히 정리해서 디자인하는 것이 중요합니다. 누구나 쉽게 신청할 수 있도록 디자인하는 것이 목표였습니다.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 04 PROTOTYPE Screens -->
+        <section id="prototype" class="visible">
+        <div class="proto-container">
+            <h1 class="section-num">01 Main Screen - 메인 화면</h1>
+            <div class="flex-wrap">
+                <img src="../media/xplayz/IMG_xplayz01.png" alt="Main Screen" />
+            </div>
+            <h1 class="section-num">02 Detail Screen - 랭킹 화면</h1>
+            <div class="flex-wrap">
+                <img src="../media/xplayz/IMG_xplayz02.png" alt="Ranking Screen" />
+            </div>
+            <h1 class="section-num">03 Detail Screen - 폼 화면</h1>
+            <div class="flex-wrap">
+                <img src="../media/xplayz/IMG_xplayz03.png" alt="Form Screen" />
+            </div>
+            <h1 class="section-num">04 Detail Screen - 상세 화면</h1>
+            <div class="flex-wrap">
+                <img src="../media/xplayz/IMG_xplayz04.png" alt="Detail Screen" />
+                <img src="../media/xplayz/IMG_xplayz05.png" alt="Detail Screen" />
+            </div>
+        </div>
+        </section>
+
+
+
+        <!-- FOOTER -->
+        <footer>
+        <p>xPlayz Web Design</p>
+        <p style="color:var(--gray-3);">UX / UI Design</p>
+        </footer>
+
+
+        <!-- SCRIPT -->
+        <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+        const overlay = document.getElementById('modal-overlay');
+        </script>
+    </body>
+</html>
