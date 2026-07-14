@@ -17,6 +17,7 @@
   "scripts": {
     "gulp": "gulp",
     "serve": "gulp serve",
+    "build:css": "node _build-css.cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta name="keywords" content="UX 디자인, UI 디자인, 포트폴리오, 웹 디자인, 앱 디자인, 게임 UX">
+    <meta name="author" content="Maybii">
+    <meta property="og:title" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta property="og:image" content="../media/og-maybii.jpg">
+    <meta property="og:url" content="https://jessnnaa.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon_io/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Report Helper UX</title>
+
+        <style>
+
+            /* ── ANIMATIONS ── */
+            @keyframes fadeUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            @keyframes scrollPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav>
+        <a class="nav-logo" href="../index.html">UX Portfolio</a>
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#features">Key Features</a>
+            <!-- <a href="#stack">Tech Stack</a> -->
+            <a href="#prototype" class="nav-prototype-btn">
+                <span class="btn-dot"></span>Live Prototype
+            </a>
+        </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-index">Project 01 — UX/UI Design</p>
+        <h1 class="hero-title">보고서 작성 도우미<br><em>UX 디자인</em></h1>
+        <p class="hero-desc">
+            반복되는 주간 업무 보고의 부담을 줄이기 위해<br>
+            질문형 스텝 플로우로 리포트를 완성하는 데스크톱 생산성 툴입니다.
+        </p>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">분야</div>
+            <div class="hero-meta-value">Product / UX Design</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">플랫폼</div>
+            <div class="hero-meta-value">데스크톱 앱</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">타겟 유저</div>
+            <div class="hero-meta-value">정기 업무 리포트를 작성하는 직장인</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">제작 기간</div>
+            <div class="hero-meta-value">2026.06-2026.07</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        </div>
+
+        <!-- 01 Overview -->
+        <section id="overview">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">01 — Overview</span>
+            <h2 class="section-title">보고서 작성 도우미</h2>
+            </div>
+
+            <div class="insight-block">
+            <p>매주 반복되는 업무 보고를 빈 문서 앞에서 고민하는 대신 정해진 질문에 답하는 것만으로 완성할 수 있도록 돕는 개인 및 팀 생산성 툴입니다.</p>
+            </div>
+
+            <div class="problem-grid">
+            <div class="problem-item" data-num="01 — Application Type">
+                <h3>서비스 유형</h3>
+                <p>업무 리포트 작성을 돕는 데스크톱 생산성 애플리케이션</p>
+            </div>
+            <div class="problem-item" data-num="02 — Goals">
+                <h3>핵심 목표</h3>
+                <p>리포트 작성에 드는 시간과 고민을 줄이고, 꾸준하고 일관된 형식의 기록을 남기는 것입니다.</p>
+            </div>
+            <div class="problem-item" data-num="03 — Design Concept">
+                <h3>디자인 콘셉트</h3>
+                <p>정돈된 컴포넌트와 블루와 틸 그라디언트 포인트 컬러로 신뢰감 있는 느낌을 강조한 UI입니다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 02 Problem -->
+        <section id="problem">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">02 — Research & Pain Points</span>
+            <h2 class="section-title">기존 보고 방식의 문제점</h2>
+            </div>
+            <div class="direction-list">
+            <div class="direction-item">
+                <div class="direction-num">01</div>
+                <div class="direction-body">
+                <h3>매번 새로 고민하는 형식</h3>
+                <p>정해진 틀 없이 자유 서술로 작성하다 보니, 매주 무엇부터 써야 할지 고민하는 데 많은 시간이 소요됩니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">02</div>
+                <div class="direction-body">
+                <h3>누락되는 회고 포인트</h3>
+                <p>작업 결과만 나열하다 보면 문제 원인이나 개선 방향 같은 회고성 내용이 빠지기 쉽습니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">03</div>
+                <div class="direction-body">
+                <h3>직군·팀마다 다른 보고 양식</h3>
+                <p>디자이너, 개발자, 영업, 기획 등 직군별로 필요한 보고 항목이 다르지만 이를 관리할 별도 도구가 없습니다.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 03 Solution -->
+        <section id="solution">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">03 — Design Solutions</span>
+            <h2 class="section-title">솔루션</h2>
+            </div>
+            <div class="user-card-row">
+            <div class="user-card-center">
+                <span class="user-card-title">Solution 01</span>
+                <h3>단계별 질문 플로우</h3>
+                <p>내 작업 보고, 동료 작업물 피드백 두 섹션의 질문에 한 번에 하나씩 답하며 자연스럽게 리포트를 완성합니다.</p>
+            </div>
+            <div class="user-card-center">
+                <span class="user-card-title">Solution 02</span>
+                <h3>자동 임시저장</h3>
+                <p>답변을 입력하는 즉시 자동으로 저장되어, 작성을 중단해도 이어서 완성할 수 있습니다.</p>
+            </div>
+            <div class="user-card-center">
+                <span class="user-card-title">Solution 03</span>
+                <h3>팀별 커스텀 템플릿</h3>
+                <p>영업팀, 개발 스프린트 등 직군에 맞는 질문 템플릿을 선택하거나 직접 구성할 수 있습니다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 04 Key Features -->
+        <section id="features">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">04 — Key Features</span>
+            <h2 class="section-title">주요 기능</h2>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>대시보드</span>
+                    </div>
+                    <h3>리포트 한눈에 관리</h3>
+                    <p>작성한 리포트를 최신순으로 확인하고, 상태(임시저장/완료)에 따라 보기·수정·삭제할 수 있습니다.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>작성 플로우</span>
+                    </div>
+                    <h3>8단계 질문형 작성</h3>
+                    <p>진행률 바와 섹션 배지로 현재 위치를 안내하고, 각 질문마다 작성 힌트를 함께 제공합니다.</p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>미리보기</span>
+                    </div>
+                    <h3>리포트 미리보기</h3>
+                    <p>완성한 답변을 정리된 리포트 형태로 확인하고, 필요하면 다시 편집 화면으로 돌아갈 수 있습니다.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>템플릿</span>
+                    </div>
+                    <h3>5종 프리셋 템플릿</h3>
+                    <p>작업 프로세스, 프로젝트 중심, 영업팀, 개발 스프린트, 간단 체크인 등 목적에 맞는 템플릿을 제공합니다.</p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item full">
+                    <div class="feature-header">
+                        <span>에디터</span>
+                    </div>
+                    <h3>커스텀 질문 세트 구성</h3>
+                    <p>팀의 워크플로우에 맞춰 질문을 추가·순서 변경하고, 힌트를 붙이거나 기본 템플릿으로 지정할 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 05 Tech Stack -->
+        <!-- <section id="stack">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">05 — Tech Stack</span>
+            <h2 class="section-title">기술 스택</h2>
+            </div>
+            <div class="user-card-row">
+                <div class="user-card-center">
+                    <span class="user-card-title">Frontend</span>
+                    <h3>React 19 + TypeScript</h3>
+                    <p>컴포넌트 기반으로 대시보드, 작성 플로우, 미리보기, 템플릿 화면을 구성했습니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">UI System</span>
+                    <h3>Tailwind CSS v4 + Radix UI</h3>
+                    <p>Radix UI 프리미티브와 Tailwind 유틸리티로 접근성을 갖춘 일관된 UI 컴포넌트를 구현했습니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Desktop</span>
+                    <h3>Tauri 2</h3>
+                    <p>Rust 기반 Tauri로 웹 UI를 가벼운 크로스플랫폼 데스크톱 앱으로 패키징했습니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Build</span>
+                    <h3>Vite 6</h3>
+                    <p>빠른 개발 서버와 번들링으로 UI 반복 작업 속도를 높였습니다.</p>
+                </div>
+            </div>
+        </div>
+        </section> -->
+
+        <!-- 06 Live Prototype -->
+        <section id="prototype" class="visible">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">05 — Live Prototype</span>
+            <h2 class="section-title">인앱 프로토타입 체험하기</h2>
+            </div>
+            <div class="insight-block">
+            <p>실제로 구현된 리포트 작성 도우미를 아래에서 바로 조작해볼 수 있습니다. 대시보드, 질문형 작성 플로우, 미리보기, 템플릿 화면까지 모두 동작합니다.</p>
+            </div>
+            <h1 style="display: flex; align-items: center; justify-content: center; font-style: italic; color: var(--text-dim); font-size: 14px; margin: 0 0 20px 0;">
+            * 모든 버튼이 동작하는 것이 아닙니다만, 전체적인 디자인 흐름을 파악할 수 있는 프로토타입으로 제작하였습니다.
+            </h1>
+            <div class="proto-actions">
+                <a class="solid-pill-btn gradient-animate" href="proto/report-helper/index.html" target="_blank" rel="noopener">
+                    새 창에서 열기<span>→</span>
+                </a>
+            </div>
+            <div class="proto-frame">
+                <iframe src="proto/report-helper/index.html" title="보고서 작성 도우미 라이브 프로토타입" loading="lazy"></iframe>
+            </div>
+        </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+        <p>Report Writing Helper</p>
+        <p style="color:var(--gray-3);">Product / UX Design</p>
+        </footer>
+
+
+        <!-- SCRIPT -->
+        <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+        </script>
+    </body>
+</html>
