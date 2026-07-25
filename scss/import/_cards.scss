@@ -80,10 +80,6 @@
     grid-column: span 1;
     gap: 1rem;
     width: 100%;
-
-    @include mobile{
-      width: 48%;
-    }
   }
 
   .feature-item h3{
