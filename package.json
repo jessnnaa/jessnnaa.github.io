@@ -19,7 +19,7 @@
     "serve": "gulp serve",
     "build:css": "node _build-css.cjs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "tailwindcss -i ./scss/main.scss -o ./css/main.css --watch"
   },
   "author": "",
   "license": "ISC",
