@@ -187,22 +187,28 @@
         <!-- 04 PROTOTYPE Screens -->
         <section id="prototype" class="visible">
         <div class="proto-container">
+            <div class="proto-actions">
+                <a class="solid-pill-btn gradient-animate" href="https://xplayz.zenaad.com" target="_blank" alt="Website">
+                    사이트 방문하기<span>→</span>
+                </a>
+            </div>
             <h1 class="section-num">01 Main Screen - 메인 화면</h1>
-            <div class="flex-wrap">
-                <img src="../media/xplayz/IMG_xplayz01.png" alt="Main Screen" />
+            <div class="screen-box">
+                <img src="../media/xplayz/IMG_xplayz01.png" alt="Main Screen" />          
             </div>
-            <h1 class="section-num">02 Detail Screen - 랭킹 화면</h1>
-            <div class="flex-wrap">
-                <img src="../media/xplayz/IMG_xplayz02.png" alt="Ranking Screen" />
+            <div class="screen-box">
+                <img src="../media/xplayz/IMG_xplayz02.png" alt="Ranking Screen" />            
             </div>
-            <h1 class="section-num">03 Detail Screen - 폼 화면</h1>
-            <div class="flex-wrap">
+            <h1 class="section-num">02 Detail Screen - 폼 화면</h1>
+            <div class="screen-box">
                 <img src="../media/xplayz/IMG_xplayz03.png" alt="Form Screen" />
             </div>
-            <h1 class="section-num">04 Detail Screen - 상세 화면</h1>
-            <div class="flex-wrap">
+            <h1 class="section-num">03 Detail Screen - 상세 화면</h1>
+            <div class="screen-box">
                 <img src="../media/xplayz/IMG_xplayz04.png" alt="Detail Screen" />
-                <img src="../media/xplayz/IMG_xplayz05.png" alt="Detail Screen" />
+            </div>
+            <div class="screen-box">
+                <img src="../media/xplayz/IMG_xplayz05.png" alt="Detail Screen" />                
             </div>
         </div>
         </section>
@@ -229,5 +235,6 @@
         document.querySelectorAll('section').forEach(s => observer.observe(s));
         const overlay = document.getElementById('modal-overlay');
         </script>
+        <script src="../js/lightbox.js"></script>
     </body>
 </html>
