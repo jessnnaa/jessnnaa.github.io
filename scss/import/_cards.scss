@@ -141,6 +141,7 @@
     flex-direction: column;
     gap: 1.2rem;
     width: 100%;
+    min-height: stretch;
     max-height: 300px;
     transition: all 0.25s ease;
 
