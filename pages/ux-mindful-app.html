@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta name="keywords" content="UX 디자인, UI 디자인, 포트폴리오, 웹 디자인, 앱 디자인, 게임 UX">
+    <meta name="author" content="Maybii">
+    <meta property="og:title" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta property="og:image" content="../media/og-maybii.jpg">
+    <meta property="og:url" content="https://jessnnaa.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon_io/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>Mindful App UX</title>
+
+        <style>
+
+            /* ── ANIMATIONS ── */
+            @keyframes fadeUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            @keyframes scrollPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav>
+        <a class="nav-logo" href="../index.html">UX Portfolio</a>
+        <div class="nav-links">
+            <a href="#prototype" class="nav-prototype-btn">
+                <span class="btn-dot"></span>Live Prototype
+            </a>
+            <a href="#overview">Overview</a>
+            <a href="#features">Key Features</a>
+        </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-index">Project 05 — UX/UI Design</p>
+        <h1 class="hero-title">숨결, 마인드풀니스 앱<br><em>UX 디자인</em></h1>
+        <p class="hero-desc">
+            바쁜 아침 속에서도 나를 돌보는 시간을 가질 수 있도록<br>
+            루틴, 호흡 명상, 감사 저널을 하나의 흐름으로 이어주는 모바일 웹 앱입니다.
+        </p>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">분야</div>
+            <div class="hero-meta-value">Product / UX Design</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">플랫폼</div>
+            <div class="hero-meta-value">모바일 웹</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">타겟 유저</div>
+            <div class="hero-meta-value">아침 루틴을 통해 마음을 돌보고 싶은 사람</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">제작 기간</div>
+            <div class="hero-meta-value">2026.09</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        </div>
+
+        <!-- 01 Live Prototype -->
+        <section id="prototype" class="visible">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">01 — Live Prototype</span>
+            <h2 class="section-title">인앱 프로토타입 체험하기</h2>
+            </div>
+            <div class="insight-block">
+            <p>실제로 구현된 &lsquo;숨결&rsquo; 앱을 아래에서 바로 조작해볼 수 있습니다.</p>
+            </div>
+            <div class="proto-actions">
+                <a class="solid-pill-btn gradient-animate" href="proto/mindful-app/index.html" target="_blank" rel="noopener">
+                    새 창에서 열기<span>→</span>
+                </a>
+            </div>
+            <div class="proto-frame">
+                <iframe src="proto/mindful-app/index.html" title="숨결 마인드풀니스 앱 라이브 프로토타입" loading="lazy"></iframe>
+            </div>
+        </div>
+        </section>
+
+        <!-- 02 Overview -->
+        <section id="overview">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">02 — Overview</span>
+            <h2 class="section-title">숨결 — 아침 루틴</h2>
+            </div>
+
+            <div class="insight-block">
+            <p>알람이 울린 뒤부터 하루를 다정하게 여는 짧은 순간들을 &lsquo;루틴 → 명상 → 저널&rsquo; 세 단계로 이어주는 마인드풀니스 웹 앱입니다.</p>
+            </div>
+
+            <div class="problem-grid">
+            <div class="problem-item" data-num="01 — Application Type">
+                <h3>서비스 유형</h3>
+                <p>아침 루틴, 호흡 명상, 감사 저널을 안내하는 모바일 웹 앱</p>
+            </div>
+            <div class="problem-item" data-num="02 — Goals">
+                <h3>핵심 목표</h3>
+                <p>거창한 습관이 아니라, 짧고 부담 없는 흐름으로 매일 아침 나를 돌보는 시간을 만드는 것입니다.</p>
+            </div>
+            <div class="problem-item" data-num="03 — Design Concept">
+                <h3>디자인 콘셉트</h3>
+                <p>피치·세이지·라벤더 톤의 부드러운 블롭 형태와 손글씨 느낌의 한글 세리프로 따뜻하고 차분한 분위기를 표현했습니다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 03 Key Features -->
+        <section id="features">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">03 — Key Features</span>
+            <h2 class="section-title">주요 기능</h2>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>루틴</span>
+                    </div>
+                    <h3>4단계 모닝 타임라인</h3>
+                    <p>기지개 켜기, 물 한 잔, 햇살 맞기, 오늘의 다짐 적기까지 시간대별 타임라인으로 하루의 시작을 안내합니다.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <span>명상</span>
+                    </div>
+                    <h3>4초 들숨·날숨 호흡 가이드</h3>
+                    <p>원이 커지고 작아지는 움직임에 맞춰 호흡하도록 유도하는 짧은 호흡 명상 화면입니다.</p>
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-item full">
+                    <div class="feature-header">
+                        <span>저널</span>
+                    </div>
+                    <h3>감사 일기 기록</h3>
+                    <p>오늘 나에게 해주고 싶은 말과 감사한 순간 세 가지를 짧게 남기고, 지난 기록을 목록으로 다시 돌아볼 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+        <p>Mindful App</p>
+        <p style="color:var(--gray-3);">Product / UX Design</p>
+        </footer>
+
+
+        <!-- SCRIPT -->
+        <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+        </script>
+        <script src="../js/lightbox.js"></script>
+    </body>
+</html>

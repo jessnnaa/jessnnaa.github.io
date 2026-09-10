@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>숨결 — 오늘의 기록</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="app-nav">
+  <div class="logo">숨결</div>
+  <ol class="steps">
+    <li class="step"><a href="index.html"><span class="num">1</span>루틴</a></li>
+    <li class="step"><a href="meditation.html"><span class="num">2</span>명상</a></li>
+    <li class="step active"><a href="journal.html"><span class="num">3</span>저널</a></li>
+  </ol>
+</nav>
+
+<div class="screen">
+  <div class="blob peach size-lg pos-tl"></div>
+  <div class="blob lavender size-md pos-br delay-1"></div>
+  <div class="blob sage size-sm pos-mr delay-2"></div>
+
+  <div class="screen-content align-top">
+    <div class="eyebrow">JOURNAL</div>
+    <h1>오늘의 기록</h1>
+    <p class="sub">매일 조금씩 채워가는 나의 감사 일기</p>
+
+    <div class="journal-actions">
+      <button id="write-btn" class="btn btn-primary" type="button">+ 글쓰기</button>
+    </div>
+
+    <!-- 기록 보기 영역: JS가 채워 넣습니다 -->
+    <div id="journal-view"></div>
+
+    <!-- 글쓰기 폼: 기본적으로 숨겨져 있다가 '글쓰기' 버튼을 누르면 나타납니다 -->
+    <form id="journal-form" class="journal-card journal-form hidden">
+      <div class="journal-date" id="form-date"></div>
+      <textarea
+        id="entry-text"
+        class="entry-textarea"
+        rows="4"
+        maxlength="200"
+        placeholder="오늘 하루, 나에게 해주고 싶은 말을 짧게 적어보세요."
+      ></textarea>
+      <div class="gratitude-inputs">
+        <input type="text" class="g-input" placeholder="감사한 순간 1 (선택)" maxlength="60">
+        <input type="text" class="g-input" placeholder="감사한 순간 2 (선택)" maxlength="60">
+        <input type="text" class="g-input" placeholder="감사한 순간 3 (선택)" maxlength="60">
+      </div>
+      <div class="form-actions">
+        <button type="button" id="cancel-btn" class="btn btn-outline">취소</button>
+        <button type="submit" class="btn btn-primary">저장하기</button>
+      </div>
+    </form>
+
+    <!-- 지난 기록 리스트: JS가 채워 넣습니다 -->
+    <div id="entries-list" class="entries-list"></div>
+  </div>
+
+  <div class="page-nav justify-between">
+    <a href="meditation.html" class="btn btn-outline">← 이전: 명상 화면</a>
+    <a href="index.html" class="btn btn-primary">처음부터 다시 →</a>
+  </div>
+</div>
+
+<footer>with <span class="heart">♥</span> 따뜻한 마음, 매일 조금씩 — 숨결</footer>
+
+<script src="journal.js"></script>
+</body>
+</html>
