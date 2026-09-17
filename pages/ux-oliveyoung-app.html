@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta name="keywords" content="UX 디자인, UI 디자인, 포트폴리오, 웹 디자인, 앱 디자인, 게임 UX">
+    <meta name="author" content="Maybii">
+    <meta property="og:title" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:description" content="Maybii의 UX/UI 디자인 포트폴리오 웹사이트입니다.">
+    <meta property="og:image" content="../media/og-maybii.jpg">
+    <meta property="og:url" content="https://jessnnaa.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Maybii UX/UI Web Portfolio">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon_io/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Fonts and Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <title>OliveYoung UX Design</title>
+
+        <style>
+
+            /* ── ANIMATIONS ── */
+            @keyframes fadeUp {
+                from {
+                opacity: 0;
+                transform: translateY(20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+
+            @keyframes scrollPulse {
+                0%, 100% { opacity: 0.3; }
+                50% { opacity: 1; }
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <!-- NAV -->
+        <nav>
+        <a class="nav-logo" href="../index.html">UX Portfolio</a>
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Solution</a>
+            <a href="#screens">Key Screens</a>
+        </div>
+        </nav>
+
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-bg"></div>
+        <p class="hero-index">Project 03 — UX/UI Design</p>
+        <h1 class="hero-title">올리브영 글로벌<br><em>UX 개선</em></h1>
+        <p class="hero-desc">
+            올리브영 글로벌 어플리케이션의 문제점을 발견하고, UX를 개선하고자 한 리디자인 케이스 스터디 입니다.
+        </p>
+        <div class="hero-meta">
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">분야</div>
+            <div class="hero-meta-value">Product / UX Design</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">플랫폼</div>
+            <div class="hero-meta-value">모바일 앱</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">타겟 유저</div>
+            <div class="hero-meta-value">올리브영 글로벌 사용자</div>
+            </div>
+            <div class="hero-meta-item">
+            <div class="hero-meta-label">제작 기간</div>
+            <div class="hero-meta-value">2026.09</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+        </div>
+
+        <!-- 01 Overview -->
+        <section id="overview">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">01 — Context Overview</span>
+            <h2 class="section-title">누가, 왜 이 앱을 켜는가</h2>
+            </div>
+
+            <div class="insight-block">
+            <p>올리브영 글로벌몰 앱을 내려받는 시점 자체가 이미 필터링된 행동이라고 가정했습니다. 한국 화장품에 관심이 없는 사람은 애초에 이 앱을 받지 않는다고 생각합니다. 그렇다면 이 유저는 릴스나 쇼츠에서 스쳐 지나간 제품을 다시 찾으러 온 목적이 뚜렷한 사람이라는 것입니다.</p>
+            </div>
+
+            <div class="problem-grid">
+            <div class="problem-item" data-num="01 — Application Type">
+                <h3>서비스 유형</h3>
+                <p>한국 화장품을 구매할 수 있는 해외용 어플리케이션</p>
+            </div>
+            <div class="problem-item" data-num="02 — Goals">
+                <h3>핵심 목표</h3>
+                <p>해외 사용자들이 쉽게 원하는 목적을 달성할 수 있도록 돕는 것입니다.</p>
+            </div>
+            <div class="problem-item" data-num="03 — Design Concept">
+                <h3>디자인 콘셉트</h3>
+                <p>기능을 더하지 않고 오히려 덜어내는 방향으로 UI를 설계합니다.</p>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 02 Problem -->
+        <section id="problem">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">02 — Pain Points</span>
+            <h2 class="section-title">기존 앱의 문제점</h2>
+            </div>
+            <div class="direction-list">
+            <div class="direction-item">
+                <div class="direction-num">01</div>
+                <div class="direction-body">
+                <h3>정보 과잉으로 인한 진입장벽</h3>
+                <p>배너, 카테고리, 추천, 이벤트, 랭킹이 첫 화면에 한꺼번에 쏟아집니다. 무엇부터 봐야 할지 모른 채 되려 겁먹고 이탈합니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">02</div>
+                <div class="direction-body">
+                <h3>인기 제품까지 가는 길이 너무 멀다</h3>
+                <p>한국에서 지금 인기 있는 제품을 보려면 메뉴를 여러 번 거쳐 들어가야 합니다. 정작 가장 찾고 싶은 정보가 가장 깊숙이 숨어 있습니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">03</div>
+                <div class="direction-body">
+                <h3>브랜드 단위로 볼 UI가 없다</h3>
+                <p>릴스에서 기억해 둔 건 제품명이 아니라 브랜드인 경우가 많습니다. 하지만 인기 브랜드들을 한 눈에 볼 수 있는 UI가 없습니다.</p>
+                </div>
+            </div>
+            <div class="direction-item">
+                <div class="direction-num">04</div>
+                <div class="direction-body">
+                <h3>바이럴 제품을 검색할 방법이 없다</h3>
+                <p>"릴스에서 본 그 크림"을 입력할 방법이 없습니다. 검색은 정확한 제품명을 알고 있어야만 작동합니다.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 03 Solution -->
+        <section id="solution">
+        <div class="content-wrap">
+            <div class="section-header">
+            <span class="section-num">03 — Design Solutions</span>
+            <h2 class="section-title">솔루션</h2>
+            </div>
+            <div class="user-card-row-lg">
+                <div class="user-card-center">
+                    <span class="user-card-title">Solution 01</span>
+                    <h3>해외 유저가 실제로 찾는 항목만 남긴다</h3>
+                    <p>적은 수의 진입점만 남기고 나머지는 하위 메뉴로 내립니다. 첫 화면의 목적을 “둘러보기”가 아니라 “빠르게 갈아타기”로 바꿉니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Solution 02</span>
+                    <h3>한국 인기 제품을 랭킹 탭 최상단 기본값으로</h3>
+                    <p>“한국 실시간 인기”를 랭킹 탭의 첫 화면으로 고정합니다. 메뉴 2~3단계를 거치지 않고, 탭 하나로 도달합니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Solution 03</span>
+                    <h3>브랜드 단위로 모아보는 전용 화면</h3>
+                    <p>홈에 바이럴 브랜드 카드를 노출하고, 브랜드별로 제품을 모아보는 브랜드관을 새로 만듭니다. “그 브랜드”를 기억하는 유저를 위해서 입니다.</p>
+                </div>
+                <div class="user-card-center">
+                    <span class="user-card-title">Solution 04</span>
+                    <h3>해시태그 기반 검색을 홈 화면 최상단에</h3>
+                    <p>검색창을 크게 키우고 해시태그 검색, 트렌드 키워드 추천을 붙입니다. “릴스에서 본 그 크림”도 태그로 접근 가능하도록 합니다.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- 04 Key Screens -->
+        <section id="screens" class="visible">
+        <div class="proto-container">
+            <h1 class="section-num">04 Redesign - Key Screens</h1>
+            <div class="scroll-wrap" id="sw1">
+                <div class="scroll-track">
+                    <div class="screen-wrap">
+                        <div class="screen-wrap-item">
+                            <div class="header-si">
+                                <span class="header-si-num">01</span>
+                                <h3>홈 화면</h3>
+                            </div>
+                            <img src="../media/oyg/IMG_oyg_01.png" alt="홈 화면">
+                            <p>진입점을 줄인 홈 화면 — 나머지는 하위 화면으로 이동</p>
+                        </div>
+                        <div class="screen-wrap-item">
+                            <div class="header-si">
+                                <span class="header-si-num">02</span>
+                                <h3>랭킹</h3>
+                            </div>
+                            <img src="../media/oyg/IMG_oyg_02.png" alt="랭킹">
+                            <p>“한국 실시간 인기”를 탭의 기본값으로 설정  — 메뉴 단계 없이 바로 도달</p>
+                        </div>
+                        <div class="screen-wrap-item">
+                            <div class="header-si">
+                                <span class="header-si-num">03</span>
+                                <h3>브랜드관</h3>
+                            </div>
+                            <img src="../media/oyg/IMG_oyg_03.png" alt="브랜드관">
+                            <p>브랜드 단위로 모아보는 전용 화면  — 바이럴 브랜드 필터를 포함</p>
+                        </div>
+                        <div class="screen-wrap-item">
+                            <div class="header-si">
+                                <span class="header-si-num">04</span>
+                                <h3>검색</h3>
+                            </div>
+                            <img src="../media/oyg/IMG_oyg_04.png" alt="검색">
+                            <p>해시태그 검색 + 실시간 검색 랭킹 — 제품명을 몰라도 찾을 수 있게 함</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+        <p>Report Writing Helper</p>
+        <p style="color:var(--gray-3);">Product / UX Design</p>
+        </footer>
+
+
+        <!-- SCRIPT -->
+        <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(s => observer.observe(s));
+        const overlay = document.getElementById('modal-overlay');
+
+
+        /* Scroll Dragging */
+        const el = document.getElementById('sw1');
+        let isDown = false, startX, scrollLeft, cachedOffsetLeft;
+        let rafId, velX = 0, lastX = 0, lastTime = 0;
+
+        el.addEventListener('pointerdown', e => {
+            isDown = true;
+            startX = e.pageX - el.offsetLeft;
+            scrollLeft = el.scrollLeft;
+            lastX = e.pageX;
+            velocity = 0;
+            cancelAnimationFrame(rafId); // 진행 중인 관성 중단
+            cancelAnimationFrame(rafId);
+            el.setPointerCapture(e.pointerId);
+            document.documentElement.style.cursor = 'grabbing';
+            document.documentElement.style.userSelect = 'none';
+            cachedOffsetLeft = el.offsetLeft;
+            velX = 0;
+            lastTime = performance.now();
+        });
+
+        const stopDrag = () => {
+            if (!isDown) return;
+            isDown = false;
+            document.documentElement.style.cursor = '';
+            document.documentElement.style.userSelect = '';
+            applyMomentum();
+        };
+
+        el.addEventListener('pointerup', stopDrag);
+        el.addEventListener('pointercancel', stopDrag);
+
+        el.addEventListener('pointerup', e => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - el.offsetLeft;
+            velocity = e.pageX - lastX; // 이동량 → 속도로 저장
+            lastX = e.pageX;
+            el.scrollLeft = scrollLeft - (x - startX);
+        });
+
+        el.addEventListener('pointermove', e => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - el.offsetLeft;
+            const now = performance.now();
+            const dt = now - lastTime;
+            if (dt > 0) velX = (e.pageX - lastX) / dt;
+            velocity = e.pageX - lastX; //이동량 ->속도로 저장
+            lastX = e.pageX;
+            lastTime = now;
+            cancelAnimationFrame(rafId);
+            rafId = requestAnimationFrame(() => {
+            el.scrollLeft = scrollLeft - (x - startX);
+            });
+        });
+
+        function applyMomentum() {
+            cancelAnimationFrame(rafId);
+            (function step() {
+                velX *= 0.96; // 마찰 계수로 속도 감쇠
+                if (Math.abs(velX) < 0.05) return;
+                el.scrollLeft -= velX * 16;
+                rafId = requestAnimationFrame(step);
+            })();
+        }
+
+        function glide() {
+            velocity *= FRICTION;          // 매 프레임마다 속도 감쇠
+            el.scrollLeft -= velocity;
+            if (Math.abs(velocity) > 0.5)  // 속도가 충분히 작아지면 종료
+            rafId = requestAnimationFrame(glide);
+        }
+
+        </script>
+        <script src="../js/lightbox.js"></script>
+    </body>
+</html>

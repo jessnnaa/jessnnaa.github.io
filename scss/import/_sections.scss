@@ -91,3 +91,33 @@ section.visible {
     margin-bottom: 5vw;
     gap: 24px;
 }
+
+/* Screen Item */
+
+.screen-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.screen-wrap-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 0 16px 0;
+}
+
+.header-si {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-si-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
