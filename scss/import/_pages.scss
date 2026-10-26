@@ -55,7 +55,7 @@
   
   .user-card-center-wh,
   .user-card-center {
-    background: rgba(255,255,255,0.35);
+    background: var(--glass);
     backdrop-filter: blur(4px);
     border: 1px solid var(--line);
     padding: 1.75rem;
@@ -192,7 +192,7 @@
   }
 
   .flow-node.highlight {
-    border-color: rgba(255, 85, 187, 0.3);
+    border-color: rgba(var(--accent-rgb), 0.3);
     background: var(--accent-faint);
     color: var(--accent);
   }

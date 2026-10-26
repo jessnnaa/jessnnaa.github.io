@@ -23,21 +23,34 @@ $breakpoint: 1024px;
 
 
 :root {
-    --bg: #FBF9F4;
+    --bg: #F7F9FC;
     --white: #ffffff;
     --surface: #ffffff;
-    --surface-soft: #f1f3f9;
-    --line: #e6e2e8;
-    --text: #1e2430;
-    --text-soft: #3A3A55;
-    --text-dim: #7A7A9A;
-    --accent: #FF4FA1;
-    --accent-soft: #efeaff;
-    --accent-dim: #FFBFC7;
-    --accent-faint: rgba(255, 191, 199, 0.15);
-    --card-light: rgba(242, 236, 236, 0.4);
-    --shadow-card:8px 8px 20px rgba(0,0,0,0.07), -4px -4px 12px rgba(255,255,255,0.95);
-    --shadow-inset: inset 4px 4px 10px rgba(0,0,0,0.07), inset -4px -4px 10px rgba(255,255,255,0.95);
+    --surface-soft: #EEF2F8;
+    --line: #E2E8F0;
+    --text: #0F1B2D;
+    --text-soft: #334155;
+    --text-dim: #64748B;
+    --gray-3: #94A3B8;
+    --gray-5: #475569;
+    --accent: #1F4FD1;
+    --accent-rgb: 31, 79, 209;
+    --accent-strong: #163A9E;
+    --accent-soft: #E8EFFD;
+    --accent-dim: #A9BFF0;
+    --accent-dim-rgb: 169, 191, 240;
+    --accent-faint: rgba(31, 79, 209, 0.06);
+    --card-light: rgba(238, 242, 248, 0.5);
+    --shadow-card:8px 8px 20px rgba(15,23,42,0.06), -4px -4px 12px rgba(255,255,255,0.95);
+    --shadow-inset: inset 4px 4px 10px rgba(15,23,42,0.06), inset -4px -4px 10px rgba(255,255,255,0.95);
+    --btn-bg: var(--accent);
+    --glass: rgba(255, 255, 255, 0.4);
+    --glow: rgba(255, 255, 255, 0.45);
+    --sheen: rgba(255, 255, 255, 0.5);
+    --nav-bg: rgba(247, 249, 252, 0.82);
+    --hl1: #EEF5FB;
+    --hl2: #F2F4FA;
+    color-scheme: light;
     --mono: 'DM Mono', monospace;
     --sans: 'Noto Sans KR', sans-serif;
     --jetbrains: 'JetBrains Mono', monospace;
@@ -47,6 +60,48 @@ $breakpoint: 1024px;
     --r-lg:  18px;
     --r-xl:  24px;
   }
+
+
+@mixin dark-tokens {
+    --bg: #0B1220;
+    --surface: #111A2E;
+    --surface-soft: #16213A;
+    --line: #24314D;
+    --text: #E6EBF5;
+    --text-soft: #C3CCDD;
+    --text-dim: #8C9AB3;
+    --gray-3: #64748B;
+    --gray-5: #A3B1C6;
+    --accent: #6B9BFF;
+    --accent-rgb: 107, 155, 255;
+    --accent-strong: #1E44A8;
+    --accent-soft: #1A2850;
+    --accent-dim: #3A5BA8;
+    --accent-dim-rgb: 58, 91, 168;
+    --accent-faint: rgba(107, 155, 255, 0.08);
+    --card-light: rgba(22, 33, 58, 0.5);
+    --shadow-card: 8px 8px 20px rgba(0,0,0,0.35), -4px -4px 12px rgba(255,255,255,0.02);
+    --shadow-inset: inset 4px 4px 10px rgba(0,0,0,0.35), inset -4px -4px 10px rgba(255,255,255,0.02);
+    --btn-bg: #2F5FD6;
+    --glass: rgba(17, 26, 46, 0.55);
+    --glow: rgba(11, 18, 32, 0.5);
+    --sheen: rgba(255, 255, 255, 0.03);
+    --nav-bg: rgba(11, 18, 32, 0.82);
+    --hl1: #14243F;
+    --hl2: #18203A;
+    color-scheme: dark;
+}
+
+/* Without JS, follow the OS setting */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    @include dark-tokens;
+  }
+}
+
+:root[data-theme="dark"] {
+  @include dark-tokens;
+}
 
   *, *::before, *::after {
     box-sizing: border-box;
@@ -69,4 +124,5 @@ $breakpoint: 1024px;
     line-height: 1.8;
     overflow-x: hidden;
     user-select: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }

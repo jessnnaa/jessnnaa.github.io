@@ -1,7 +1,7 @@
 /* ── FOOTER ── */
 footer {
     padding: 3rem;
-    background: hsla(330, 100%, 99%, 0.82);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--line);
     display: flex;
