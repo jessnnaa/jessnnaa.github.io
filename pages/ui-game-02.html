@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <title>Game Project 04</title>
+    <title>Game Project 02</title>
 
         <style>
 
@@ -63,10 +63,11 @@
             </nav>
             <!-- HERO CONTENT -->
             <p class="hero-index">Project 02 — Game UI Design</p>
-            <h1 class="hero-title">RPG 콘솔 스타일 게임<br><em>UI 디자인</em></h1>
+            <h1 class="hero-title">판타지 TCG 수집형 게임<br><em>UI 디자인</em></h1>
             <p class="hero-desc">
-                RPG 콘솔 게임의 화면을 디자인하였습니다.<br>
-                다크판타지 액션 장르를 모티브로 UI를 구성하였습니다. 그래픽에 집중할 수 있도록 깔끔한 레이아웃으로 제작하였습니다.</p>
+                판타지풍 수집형 모바일 게임의 화면을 디자인하였습니다.<br>
+                타블렛, PC, 모바일에 대응할 수 있는 UI로 구성하였습니다.
+            </p>
             <div class="hero-meta">
                 <div class="hero-meta-item">
                 <div class="hero-meta-label">분야</div>
@@ -74,15 +75,15 @@
                 </div>
                 <div class="hero-meta-item">
                 <div class="hero-meta-label">플랫폼</div>
-                <div class="hero-meta-value">콘솔 게임</div>
+                <div class="hero-meta-value">모바일 게임</div>
                 </div>
                 <div class="hero-meta-item">
                 <div class="hero-meta-label">타겟 유저</div>
-                <div class="hero-meta-value">콘솔 게임 유저</div>
+                <div class="hero-meta-value">모바일 게임 유저</div>
                 </div>
                 <div class="hero-meta-item">
                 <div class="hero-meta-label">제작 기간</div>
-                <div class="hero-meta-value">2026.07-2026.08</div>
+                <div class="hero-meta-value">2026.03-2026.07</div>
                 </div>
             </div>
             <div class="hero-scroll">
@@ -92,59 +93,113 @@
         </div>
 
         <!-- PROJECT IMAGES -->
+
+        <h1 style="display: flex; align-items: center; justify-content: center; font-style: italic; color: var(--text-dim); font-size: 14px; margin: 24px 0;">*미드저니 AI를 활용해서 일러스트 이미지를 생성하였습니다.</h1>
         
         <!--01 GAME HUD-->
         <div class="screen-box-container">
             <div class="content">
                 <div class="screen-header">
-                    <span class="screen-num">01 — IN-GAME HUD </span>
-                    <h2 class="screen-title">인게임 기본 HUD</h2>
+                    <span class="screen-num">01 — HOME HUD </span>
+                    <h2 class="screen-title">홈 화면</h2>
                 </div>
                 <div class="screen-insight-block">
-                    <p>플레이 중 인게임에서 확인할 수 있는 기본 HUD입니다. 배틀이 끝난 직후 컷씬에 들어갈 때의 순간을 생각하며 디자인하였습니다.</p>
+                    <p>플레이어가 게임에 몰입할 수 있도록 게임 분위기를 나타내는 홈 화면을 디자인하였습니다.<br>
+                    플레이어가 접속할 때 확인해야하는 메뉴들을 바로 접근할 수 있도록 UI를 구역별로 정리해서 나열하였습니다.</p>
                 </div>
             </div>
             <div class="screen-section">
-                <img class="bg" src="../media/game04/IMG_g4_01.png" alt="In-Game HUD">
+                <img class="bg" src="../media/game00/IMG_g0_01.png" alt="Home Screen">
+                <img class="bg" src="../media/game00/IMG_g0_02.png" alt="Popup Screen">
             </div>
         </div>
 
-        <!--02 Menu-->
+        <!--02 Collection-->
         <div class="screen-box-container">
             <div class="content">
                 <div class="screen-header">
-                    <span class="screen-num">02 - MAIN STATUS</span>
-                    <h2 class="screen-title">메뉴 화면 - 캐릭터 스탯</h2>
+                    <span class="screen-num">02 - CARD COLLECTION</span>
+                    <h2 class="screen-title">카드 수집 화면(인벤토리)</h2>
                 </div>
                 <div class="screen-insight-block">
-                    <p>주인공 캐릭터의 스탯을 확인할 수 있는 메뉴 화면입니다. 필요한 정보만 표시해서 레이아웃을 깔끔하게 유지하였습니다.</p>
+                    <p>간략한 필터 기능으로 플레이어가 소유 중인 카드 컬렉션을 확인할 수 있는 인벤토리 화면입니다.<br>
+                    카드의 등급과 캐릭터 일러스트가 한 눈에 보이도록 강조하였습니다.</p>
                 </div>
             </div>
             <div class="screen-section">
-                <img class="bg" src="../media/game04/IMG_g4_02.png" alt="Main Status">
+                <img class="bg" src="../media/game00/IMG_g0_03.png" alt="Card Collection">
             </div>
         </div>
         
-        <!--03 Equipment-->
+        <!--03 party-->
         <div class="screen-box-container">
             <div class="content">
                 <div class="screen-header">
-                    <span class="screen-num">03 - EQUIPMENT</span>
-                    <h2 class="screen-title">메뉴 화면 - 캐릭터 장비</h2>
+                    <span class="screen-num">03 - PARTY SETUP</span>
+                    <h2 class="screen-title">파티 구성 화면</h2>
                 </div>
                 <div class="screen-insight-block">
-                    <p>메뉴 화면 중 아이템 장비에 진입하였을 때 보이는 화면입니다. 현재 착용 중인 무기와 악세사리를 확인할 수 있습니다.<br>
-                    각 아이템을 선택하면 소지 중인 아이템 목록을 확인할 수 있습니다.</p>
+                    <p>보유 중인 카드 중에서 전장에 데리고 갈 덱을 구성하는 파티 구성 화면입니다.<br>
+                    빈 슬롯을 선택해서 덱을 꾸립니다.</p>
                 </div>
             </div>
             <div class="screen-section">
-                <img class="bg" src="../media/game04/IMG_g4_03.png" alt="Equipment">
+                <img class="bg" src="../media/game00/IMG_g0_04.png" alt="Party Setup">
             </div>
+        </div>
+
+        <!--04 Event-->
+        <div class="screen-box-container">
+            <div class="content">
+                <div class="screen-header">
+                    <span class="screen-num">04 - EVENT PAGE</span>
+                    <h2 class="screen-title">이벤트 페이지</h2>
+                </div>
+                <div class="screen-insight-block">
+                    <p>이벤트 페이지 입니다. 일일 보상을 획득하고 시즌별로 오픈된 이벤트들을 확인할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="screen-section">
+                <img class="bg" src="../media/game00/IMG_g0_08.png" alt="Event Page">
+            </div>
+        </div>
+        
+        <!--05 Detail-->
+        <div class="screen-box-container">
+        <div class="content">
+            <div class="screen-header">
+                <span class="screen-num">05 - CARD STAT</span>
+                <h2 class="screen-title">카드 상세 정보</h2>
+            </div>
+            <div class="screen-insight-block">
+                <p>각 카드(아르카나)의 기본 정보를 확인할 수 있는 스탯 화면입니다. 대표 일러스트를 배경에 깔고, 정보 UI를 주위에 배치하였습니다. 스탯, 스킬, 스킨 메뉴에 접근할 수 있으며, 조작키에 대한 UI도 확인할 수 있습니다.
+                </p>
+            </div>
+        </div>
+        <div class="screen-section">
+            <img class="bg" src="../media/game00/IMG_g0_05.png" alt="Card Stat">
+        </div>
+        </div>
+
+        <div class="screen-box-container">
+        <div class="content">
+            <div class="screen-header">
+                <span class="screen-num">06 - CHARACTER SCREEN</span>
+                <h2 class="screen-title">연출 화면(캐릭터 획득)</h2>
+            </div>
+            <div class="screen-insight-block">
+                <p>캐릭터를 획득할 때 표시되는 연출 화면입니다.</p>
+            </div>
+        </div>
+        <div class="screen-section">
+            <img class="bg" src="../media/game00/IMG_g0_06.png" alt="Character Screen">
+            <img class="bg" src="../media/game00/IMG_g0_07.png" alt="Character Screen">
+        </div>
         </div>
 
         <!-- FOOTER -->
         <footer>
-            <p>RPG Console Game UI Design</p>
+            <p>Fantasy Mobile Game UI Design</p>
             <p style="color:var(--gray-3);">Game UI Design</p>
         </footer>
         <script src="../js/lightbox.js"></script>
